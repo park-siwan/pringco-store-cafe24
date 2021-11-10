@@ -1,0 +1,31 @@
+<!--@js(/itsme/js/fixed_left.js)-->
+<div class="nav_left_con">
+  <div class="nav_left">
+    <div class="category" module="Layout_category">
+      <!--@css(/css/module/layout/category.css)-->
+      <!--@js(/js/module/layout/category.js)-->
+
+      <div class="position">
+        <ul>
+          <li><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+          <li><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+          <li><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+          <li><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div module="Layout_BoardInfo" class="left_board">
+      <ul>
+        <li><a href="{$link_board_list}">{$board_name}</a></li>
+        <li><a href="{$link_board_list}">{$board_name}</a></li>
+      </ul>
+    </div>
+
+    <div class="left_sns">
+      <!-- sns 수정 -->
+      <!--@import(/itsme/html/sns.html)-->
+      <!-- // sns 수정 -->
+    </div>
+  </div>
+</div>

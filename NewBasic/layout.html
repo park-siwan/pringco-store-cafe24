@@ -41,23 +41,6 @@
             <!--@css(/css/module/layout/logotop.css)-->
             <a href="/index.html">{$mall_name}</a>
           </h1>
-          <div module="Layout_SearchHeader">
-            <!--@css(/css/module/layout/searchHeader.css)-->
-            <!--
-                $product_page=/product/detail.html
-                $category_page=/product/list.html
-            -->
-            <fieldset>
-              <legend>검색</legend>
-              {$form.keyword}<input
-                type="image"
-                src="//img.echosting.cafe24.com/skin/base/layout/btn_search.gif"
-                alt="검색"
-                onclick="{$action_search_submit}"
-              />
-              <ul class="autoDrop" id="{$search_auto_id}"></ul>
-            </fieldset>
-          </div>
         </div>
 
         <div module="Layout_multishopList" class="list">
@@ -139,64 +122,6 @@
             >게시판</a
           >
         </div>
-
-        <ul class="special">
-          <li><a href="/product/list.html?cate_no=24">신상품</a></li>
-          <li><a href="/product/list.html?cate_no=25">프리미엄</a></li>
-          <li><a href="/product/list.html?cate_no=26">스페셜상품</a></li>
-        </ul>
-
-        <ul module="Layout_shoppingInfo">
-          <!--@css(/css/module/layout/shoppingInfo.css)-->
-          <li class="{$use_mileage|display}">
-            <a href="/myshop/mileage/historyList.html"
-              >{$mileage_name} <strong>{$mileage}</strong></a
-            >
-          </li>
-          <li class="{$use_basket_cnt|display}">
-            <a href="/order/basket.html"
-              >장바구니
-              <strong
-                >{$basket_cnt}<span class="{$use_basket_price|display}"
-                  >({$basket_price})</span
-                ></strong
-              ></a
-            >
-          </li>
-          <li class="{$use_interest_prd|display}">
-            <a href="/myshop/wish_list.html"
-              >관심상품 <strong>{$interest_prd_cnt}</strong></a
-            >
-          </li>
-          <li class="{$use_like_product_cnt|display}">{$like_prd_tag}</li>
-          <li class="{$use_coupon_cnt|display}">
-            <a href="/myshop/coupon/coupon.html"
-              >쿠폰 <strong>{$coupon_cnt}</strong></a
-            >
-          </li>
-          <li class="{$use_deposit|display}">
-            <a href="/myshop/deposits/historyList.html"
-              >{$deposit_name} <strong>{$deposit}</strong></a
-            >
-          </li>
-        </ul>
-
-        <div class="link">
-          <a
-            module="Layout_bookmark"
-            href="/link/bookmark.html"
-            target="_blank"
-            onclick="winPop(this.href); return false;"
-            ><span>즐겨찾기</span></a
-          >
-          <a
-            module="Layout_shortcut"
-            href="/link/shortcut.html"
-            target="_blank"
-            onclick="winPop(this.href); return false;"
-            >바로가기</a
-          >
-        </div>
       </div>
     </div>
     <hr class="layout" />
@@ -236,32 +161,6 @@
             </ul>
           </div>
 
-          <div module="Layout_SearchSide">
-            <!--@css(/css/module/layout/searchSide.css)-->
-            <!--
-                    $search_page = /product/search.html
-                    $product_page = /product/detail.html
-                -->
-            <h2>상품검색</h2>
-            <fieldset>
-              <legend>검색</legend>
-              {$form.keyword}<input
-                type="image"
-                src="//img.echosting.cafe24.com/skin/base/layout/btn_search.gif"
-                alt="검색"
-                onclick="{$action_search_submit}"
-              />
-              <ul class="autoDrop" id="{$search_auto_id}"></ul>
-            </fieldset>
-            <div class="bestKeyword {$hot_keyword_display|display}">
-              <a href="{$hot_keyword_url}">{$hot_keyword_name}</a>
-              <a href="{$hot_keyword_url}">{$hot_keyword_name}</a>
-            </div>
-            <p class="button">
-              <a href="/product/search.html" class="btnLink">상품상세검색</a>
-            </p>
-          </div>
-
           <div module="Layout_project">
             <!--@css(/css/module/layout/project.css)-->
             <!--@js(/js/rotate.js)-->
@@ -293,62 +192,6 @@
                 <span>다음</span>
               </button>
             </div>
-          </div>
-
-          <div module="Layout_login">
-            <!--@css(/css/module/layout/login.css)-->
-            <h2>회원로그인</h2>
-            <fieldset>
-              <legend>회원로그인</legend>
-              <p class="check">
-                <span
-                  ><label
-                    for="member_id"
-                    class="ePlaceholder"
-                    title="{$login_id_type_text}"
-                    >{$form.member_id}</label
-                  ></span
-                >
-                <span
-                  ><label
-                    for="member_passwd"
-                    class="ePlaceholder"
-                    title="비밀번호"
-                    >{$form.member_passwd}</label
-                  ></span
-                >
-              </p>
-              <p class="security">
-                {$form.check_save_id} {$form.check_secret_connect}
-              </p>
-              <div class="ec-base-button gColumn">
-                <a
-                  href="#none"
-                  onclick="{$action_func_login}"
-                  class="btnSubmit sizeS"
-                  >로그인</a
-                >
-                <a href="/member/join.html" class="btnNormal sizeS">회원가입</a>
-              </div>
-            </fieldset>
-            <ul class="find">
-              <li><a href="/member/id/find_id.html">아이디찾기</a></li>
-              <li>
-                <a href="/member/passwd/find_passwd_info.html">비밀번호찾기</a>
-              </li>
-            </ul>
-          </div>
-
-          <div module="Layout_Info">
-            <!--@css(/css/module/layout/info.css)-->
-            <h2>고객센터</h2>
-            <ul>
-              <li class="tel">
-                <strong>Telephone</strong><span>{$phone}</span>
-              </li>
-              <li><strong>Fax</strong><span>{$fax}</span></li>
-              <li><strong>Time</strong><span>{$runtime}</span></li>
-            </ul>
           </div>
 
           <div module="Layout_Myshop">
@@ -393,88 +236,9 @@
               </p>
             </fieldset>
           </div>
-
-          <div class="banner">
-            <p module="Layout_giftBanner">
-              <a href="/order/gift_list.html" class="giftBanner"
-                >고객사은품 안내</a
-              >
-            </p>
-            <p module="Layout_opdiaryBanner">
-              <a href="/board/opdiary/list.html" class="opdiaryBanner"
-                >운영일지</a
-              >
-            </p>
-            <p module="Layout_sosBanner">
-              <a href="/board/urgency/urgency.html" class="sosBanner"
-                >긴급 문의</a
-              >
-            </p>
-            <p module="Layout_attendBanner">
-              <!--
-                        $stamp_type_url = /attend/stamp.html
-                        $comment_type_url = /attend/comment.html
-                    -->
-              <a href="{$attend_url}" class="attendBanner">출석체크</a>
-            </p>
-            <p module="Layout_couponzoneBanner">
-              <a href="/coupon/coupon_zone.html" class="couponzoneBanner"
-                >알뜰살뜰 쿠폰존</a
-              >
-            </p>
-            <p module="Layout_calendarBanner">
-              <a href="{$calendar_view_page}" class="calendarBanner"
-                >캘린더 게시판</a
-              >
-            </p>
-          </div>
         </div>
       </div>
       <hr class="layout" />
-
-      <div id="quick">
-        <div module="Layout_orderBasketcount">
-          <!--@css(/css/module/layout/orderBasketcount.css)-->
-          <strong>장바구니</strong>
-          <span><a href="/order/basket.html">{$basket_count}</a>개</span>
-        </div>
-
-        <div module="Layout_productRecent">
-          <!--@css(/css/module/layout/productRecent.css)-->
-          <h2><a href="/product/recent_view_product.html">최근 본 상품</a></h2>
-          <ul>
-            <li class="{$disp_recent|display}">
-              <a href="/product/detail.html{$param}"
-                ><img src="{$recent_img}" alt="" /><span>{$name}</span></a
-              >
-            </li>
-            <li class="{$disp_recent|display}">
-              <a href="/product/detail.html{$param}"
-                ><img src="{$recent_img}" alt="" /><span>{$name}</span></a
-              >
-            </li>
-          </ul>
-          <p class="player">
-            <img
-              src="//img.echosting.cafe24.com/skin/base/layout/btn_recent_prev.gif"
-              alt="이전 제품"
-              class="prev"
-            /><img
-              src="//img.echosting.cafe24.com/skin/base/layout/btn_recent_next.gif"
-              alt="다음 제품"
-              class="next"
-            />
-          </p>
-        </div>
-
-        <p class="pageTop">
-          <a href="#header" title="화면 최상단으로 이동하기"
-            ><img
-              src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/btn_top1.gif"
-              alt="맨위로"
-          /></a>
-        </p>
-      </div>
     </div>
     <hr class="layout" />
 

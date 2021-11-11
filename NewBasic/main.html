@@ -42,13 +42,13 @@
             <!--@css(/css/module/layout/logotop.css)-->
             <a href="/index.html">{$mall_name}</a>
           </h1>
-          <div module="Layout_SearchHeader">
-            <!--@css(/css/module/layout/searchHeader.css)-->
-            <!--
+          <!-- <div module="Layout_SearchHeader"> -->
+          <!--@css(/css/module/layout/searchHeader.css)-->
+          <!--
                 $product_page=/product/detail.html
                 $category_page=/product/list.html
             -->
-            <fieldset>
+          <!-- <fieldset>
               <legend>검색</legend>
               {$form.keyword}<input
                 type="image"
@@ -57,7 +57,18 @@
                 onclick="{$action_search_submit}"
               />
               <ul class="autoDrop" id="{$search_auto_id}"></ul>
-            </fieldset>
+            </fieldset> -->
+          <!-- </div> -->
+          <div id="category" module="Layout_category">
+            <!--@css(/css/module/layout/category.css)-->
+            <!--@js(/js/module/layout/category.js)-->
+            <div class="position">
+              <ul>
+                <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -147,9 +158,9 @@
           <li><a href="/product/list.html?cate_no=26">스페셜상품</a></li>
         </ul> -->
 
-        <ul module="Layout_shoppingInfo">
-          <!--@css(/css/module/layout/shoppingInfo.css)-->
-          <li class="{$use_mileage|display}">
+        <!-- <ul module="Layout_shoppingInfo"> -->
+        <!--@css(/css/module/layout/shoppingInfo.css)-->
+        <!-- <li class="{$use_mileage|display}">
             <a href="/myshop/mileage/historyList.html"
               >{$mileage_name} <strong>{$mileage}</strong></a
             >
@@ -179,10 +190,10 @@
             <a href="/myshop/deposits/historyList.html"
               >{$deposit_name} <strong>{$deposit}</strong></a
             >
-          </li>
-        </ul>
+          </li> -->
+        <!-- </ul> -->
 
-        <div class="link">
+        <!-- <div class="link">
           <a
             module="Layout_bookmark"
             href="/link/bookmark.html"
@@ -197,7 +208,7 @@
             onclick="winPop(this.href); return false;"
             >바로가기</a
           >
-        </div>
+        </div> -->
       </div>
     </div>
     <hr class="layout" />

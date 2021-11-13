@@ -3,6 +3,7 @@
 }
 .xans-layout-category .position > ul {
   display: flex;
+  flex-direction: column;
 }
 .xans-layout-category .position > ul > li {
   position: relative;

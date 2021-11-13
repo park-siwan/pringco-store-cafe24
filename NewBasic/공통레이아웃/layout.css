@@ -51,7 +51,7 @@
   align-items: center;
 }
 
-#header .topArea a {
+.topArea a {
   padding-right: 10px;
 }
 
@@ -136,8 +136,8 @@
   margin: 27px auto 0; */
 }
 #container {
-  /* width: 1218px;
-  margin: 0 auto; */
+  width: 1218px;
+  margin: 0 auto;
 }
 #container:after {
   content: "";

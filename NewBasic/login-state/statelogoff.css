@@ -5,11 +5,11 @@
   height: 45px;
 }
 .xans-layout-statelogoff > a {
-  padding: 0 4px 0 10px;
   color: #757575;
   font-size: 12px;
-  background: url("//img.echosting.cafe24.com/skin/`ase/common/ico_bar.gif")
-    no-repeat 0 1px;
+}
+.xans-layout-statelogoff > a:last-child {
+  padding-right: 0;
 }
 .xans-layout-statelogoff .log {
   background: none;

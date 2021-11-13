@@ -1,12 +1,9 @@
 .xans-layout-logobottom {
-  float: left;
-  width: 189px;
-  padding: 64px 0 0 15px;
 }
 .xans-layout-logobottom a {
   display: block;
-  font-family: verdana, "맑은 고딕", malgungothic, sans-serif;
-  font-size: 28px;
+  /* font-family: verdana, "맑은 고딕", malgungothic, sans-serif; */
+  font-size: 18px;
   color: #8c8c8c;
   font-weight: bold;
   word-wrap: break-word;

@@ -229,34 +229,31 @@
 }
 
 #footer {
-  height: 80px;
   padding: 70px 7.5%;
-  /* position: relative;
-  margin: 40px 0 0 0;
-  border-top: 1px solid #e8e8e8; */
-  /* border-bottom: 45px solid #e8e8e8; */
 }
 #footer:before {
-  /* position: absolute;
-  top: 44px;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 0;
-  border-bottom: 1px solid #e8e8e8; */
 }
 #footer .inner {
-  overflow: hidden;
-  position: relative;
-
-  /* margin: 0 auto -45px; */
 }
 #footer .inner:after {
   content: "";
   display: block;
   clear: both;
 }
-
+#footer h2 {
+  margin-bottom: 30px;
+}
+#footer ul {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+#footer ul .item {
+  margin-right: 20px;
+}
+#footer ul .item li {
+  font-size: 11;
+}
 /* Main */
 #boardArea {
   overflow: hidden;

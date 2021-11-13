@@ -74,6 +74,7 @@
 }
 
 #wrap {
+  width: 100%;
   /* position: relative;
   width: 1460px;
   margin: 27px auto 0; */
@@ -143,11 +144,14 @@
 }
 
 #contents .visual {
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
 }
 
 #contents .visual img {
   /* max-width: 100%; */
+  width: 100%;
+  /* transform: rotate(
+    90deg); */
 }
 
 #banner {

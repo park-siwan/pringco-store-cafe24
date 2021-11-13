@@ -2,7 +2,7 @@
   float: right;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   height: 45px;
 }
 .xans-layout-statelogoff > a {

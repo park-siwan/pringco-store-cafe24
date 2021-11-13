@@ -20,28 +20,46 @@
   height: 120px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 #header .topArea ul {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #header .topArea li {
-  margin-right: 70px;
+  /* margin-right: 70px; */
   margin-bottom: 8px;
-}
-
-#header .topArea .store,
-#header .topArea .board {
-  position: relative;
 }
 
 #header .topArea a {
   font-weight: 14;
   font-weight: 600;
   color: white;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .topArea .store-container,
+#header .topArea .board-container {
+  position: relative;
+  height: 30px;
+}
+
+/* 헤더 메뉴 호버시 보이는 메뉴들 */
+#header .topArea .store-container:hover > .xans-layout-category,
+#header .topArea .board-container:hover > .xans-layout-boardinfo {
+  opacity: 1;
+  visibility: visible;
+}
+
+#category:hover,
+.xans-layout-boardinfo:hover {
+  opacity: 1;
+  visibility: visible;
 }
 
 #header .special {

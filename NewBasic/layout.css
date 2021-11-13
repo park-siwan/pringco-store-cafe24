@@ -30,9 +30,17 @@
 
 #header .topArea li {
   margin-right: 70px;
+  margin-bottom: 8px;
+}
+
+#header .topArea .store,
+#header .topArea .board {
+  position: relative;
 }
 
 #header .topArea a {
+  font-weight: 14;
+  font-weight: 600;
   color: white;
 }
 

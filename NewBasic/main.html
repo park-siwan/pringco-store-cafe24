@@ -50,39 +50,45 @@
                 About Us
               </a>
             </li>
-            <li>
-              <a href="/shopinfo/company.html">
-                Store
-              </a>
-            </li>
-            <div id="category" module="Layout_category">
-              <!--@css(/css/module/layout/category.css)-->
-              <!--@js(/js/module/layout/category.js)-->
-              <div class="position">
-                  <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
-                  <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
-                  <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+
+            <div class="store">
+              <li>
+                <a href="/shopinfo/company.html">
+                  Store
+                </a>
+              </li>
+              
+              <div id="category" module="Layout_category">
+                <!--@css(/css/module/layout/category.css)-->
+                <!--@js(/js/module/layout/category.js)-->
+                <div class="position">
+                    <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                    <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                    <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                </div>
               </div>
             </div>
 
-            <li>
-              <a href="/shopinfo/company.html">
-                Board
-              </a>
-            </li>
-            
-            <div module="Layout_BoardInfo">
-              <!--@css(/css/module/layout/boardInfo.css)-->
+              <div class="board">
                 <li>
-                  <a href="{$link_board_list}">{$board_name}</a>
-                  {$board_adult_icon}
+                  <a href="/shopinfo/company.html">
+                    Board
+                  </a>
                 </li>
-                <li>
-                  <a href="{$link_board_list}">{$board_name}</a>
-                  {$board_adult_icon}
-                </li>
-            </div>
-          </ul>
+
+                <div module="Layout_BoardInfo">
+                  <!--@css(/css/module/layout/boardInfo.css)-->
+                    <li>
+                      <a href="{$link_board_list}">{$board_name}</a>
+                      {$board_adult_icon}
+                    </li>
+                    <li>
+                      <a href="{$link_board_list}">{$board_name}</a>
+                      {$board_adult_icon}
+                    </li>
+                </div>
+              </div>
+            </ul>
           
           <div module="Layout_statelogoff">
             <!--@css(/css/module/layout/statelogoff.css)-->

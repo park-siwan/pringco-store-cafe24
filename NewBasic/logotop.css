@@ -1,17 +1,18 @@
 .xans-layout-logotop {
-  display: flex;
   z-index: 10;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-right: 150px;
 }
 .xans-layout-logotop a {
-  font-size: 40px;
+  font-size: 24px;
   color: #008bcc;
   font-weight: bold;
   text-decoration: none;
   font-style: normal;
 }
 .xans-layout-logotop img {
-  max-width: 800px;
-  max-height: 112px;
+  max-width: 140px;
+  max-height: 30px;
 }

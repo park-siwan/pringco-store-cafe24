@@ -1,11 +1,10 @@
 .xans-layout-logotop {
-  width: 800px;
-  margin: 0 auto;
-  text-align: center;
+  display: flex;
   z-index: 10;
+  justify-content: flex-start;
+  align-items: center;
 }
 .xans-layout-logotop a {
-  font-family: verdana, "맑은 고딕", malgungothic, sans-serif;
   font-size: 40px;
   color: #008bcc;
   font-weight: bold;

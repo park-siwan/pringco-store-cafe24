@@ -4,6 +4,7 @@
 #header {
   width: 100%;
   position: fixed;
+  z-index: 10;
 }
 #header:before {
 }
@@ -12,6 +13,14 @@
 #header .inner {
   position: relative;
   width: 100%;
+  height: 130px;
+  background-color: white;
+}
+#header .notinner a {
+  color: white;
+}
+#header .inner a {
+  color: black;
 }
 #header .inner:after {
 }
@@ -33,17 +42,16 @@
   margin-bottom: 8px;
 }
 
-#header .topArea a {
+.topArea a {
   font-weight: 14;
   font-weight: 600;
-  color: white;
   width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#header .topArea a:not(:last-child) {
+#header .topArea a {
   padding-right: 10px;
 }
 
@@ -118,7 +126,9 @@
   background: url("//img.echosting.cafe24.com/skin/base/layout/ico_bookmark.png")
     no-repeat 0 1px;
 }
-
+.guard {
+  height: 176px;
+}
 #wrap {
   width: 100%;
   /* position: relative;

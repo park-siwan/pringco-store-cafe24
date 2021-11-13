@@ -16,16 +16,26 @@
 #header .inner:after {
 }
 #header .topArea {
+  padding: 60px 50px 0;
   height: 120px;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
 }
-#header .topArea:after {
-  content: "";
-  display: block;
-  clear: both;
+#header .topArea ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#header .topArea li {
+  margin-right: 70px;
+}
+
+#header .topArea a {
+  color: white;
+}
+
 #header .special {
   float: left;
   border-left: 1px solid #d8d8d8;

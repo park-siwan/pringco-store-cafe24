@@ -229,7 +229,7 @@
 }
 
 #footer {
-  padding: 70px 7.5%;
+  padding: 50px;
 }
 #footer:before {
 }
@@ -243,16 +243,24 @@
 #footer h2 {
   margin-bottom: 30px;
 }
+#footer h3 {
+  margin-bottom: 15px;
+}
 #footer ul {
   display: flex;
   justify-content: start;
   align-items: start;
 }
 #footer ul .item {
-  margin-right: 20px;
+  margin-right: 43px;
+  width: 25%;
+  margin-bottom: 10px;
+}
+#footer ul .item:last-child {
+  margin-right: 0;
 }
 #footer ul .item li {
-  font-size: 11;
+  font-size: 11px;
 }
 /* Main */
 #boardArea {

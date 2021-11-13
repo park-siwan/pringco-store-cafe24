@@ -141,8 +141,12 @@
   float: right;
   width: 1014px;
 }
+
 #contents .visual img {
   max-width: 100%;
+}
+.visual {
+  transform: rotate(90deg);
 }
 #banner {
   position: absolute;

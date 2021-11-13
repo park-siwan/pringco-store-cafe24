@@ -7,12 +7,13 @@
 }
 .xans-layout-logotop a {
   font-size: 24px;
-  color: #008bcc;
-  font-weight: bold;
+  /* color: #008bcc;
+  font-weight: bold; */
   text-decoration: none;
   font-style: normal;
+  width: 130px !important;
 }
 .xans-layout-logotop img {
-  max-width: 140px;
-  max-height: 30px;
+  max-width: 130px;
+  height: auto;
 }

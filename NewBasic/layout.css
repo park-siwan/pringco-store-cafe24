@@ -37,10 +37,14 @@
   font-weight: 14;
   font-weight: 600;
   color: white;
-  width: 100px;
+  width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#header .topArea a:not(:last-child) {
+  padding-right: 10px;
 }
 
 #header .topArea .store-container,

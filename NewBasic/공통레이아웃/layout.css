@@ -230,6 +230,8 @@
 
 #footer {
   padding: 50px;
+  margin-top: 50px;
+  height: 300px;
 }
 #footer:before {
 }
@@ -261,6 +263,16 @@
 }
 #footer ul .item li {
   font-size: 11px;
+}
+/* Mobile용 CSS 입력. 767px까지 해당 css가 적용됩니다.  */
+@media (max-width: 767px) {
+  #footer ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #footer ul .item {
+    width: 100%;
+  }
 }
 /* Main */
 #boardArea {

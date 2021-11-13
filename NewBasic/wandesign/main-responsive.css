@@ -1,0 +1,21 @@
+/* Mobile용 CSS 입력. 767px까지 해당 css가 적용됩니다.  */
+@media (max-width: 767px) {
+  #footer ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #footer ul .item {
+    width: 100%;
+  }
+}
+/* 768px부터 해당 css가 적용됩니다. Tablet & PC용 CSS 입력.    */
+@media (min-width: 768px) {
+}
+
+#footer ul {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#footer ul .item {
+  width: 100%;
+}

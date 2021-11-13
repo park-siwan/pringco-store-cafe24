@@ -46,7 +46,12 @@
           <!-- 헤더 중앙 메뉴들 -->
           <ul>
             <li><a href="/shopinfo/company.html">About Us</a></li>
-            <li><a href="/shopinfo/company.html">Store</a></li>
+            <li>
+              <a href="/shopinfo/company.html">
+                Store
+              </a>
+  
+            </li>
             <div id="category" module="Layout_category">
               <!--@css(/css/module/layout/category.css)-->
               <!--@js(/js/module/layout/category.js)-->
@@ -56,19 +61,23 @@
                   <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
               </div>
             </div>
-            <li><a href="/shopinfo/company.html">Board</a></li>
-            <div module="Layout_BoardInfo">
-              <!--@css(/css/module/layout/boardInfo.css)-->
-                <li>
-                  <a href="{$link_board_list}">{$board_name}</a>
-                  {$board_adult_icon}
-                </li>
-                <li>
-                  <a href="{$link_board_list}">{$board_name}</a>
-                  {$board_adult_icon}
-                </li>
-              
-            </div>
+            <li>
+              <a href="/shopinfo/company.html">
+                Board
+              </a>
+              <div module="Layout_BoardInfo">
+                <!--@css(/css/module/layout/boardInfo.css)-->
+                  <li>
+                    <a href="{$link_board_list}">{$board_name}</a>
+                    {$board_adult_icon}
+                  </li>
+                  <li>
+                    <a href="{$link_board_list}">{$board_name}</a>
+                    {$board_adult_icon}
+                  </li>
+                
+              </div>
+            </li>
           </ul>
           
           <div module="Layout_statelogoff">

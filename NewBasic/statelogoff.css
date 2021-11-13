@@ -1,7 +1,9 @@
 .xans-layout-statelogoff {
   float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   height: 45px;
-  line-height: 45px;
 }
 .xans-layout-statelogoff > a {
   padding: 0 4px 0 10px;

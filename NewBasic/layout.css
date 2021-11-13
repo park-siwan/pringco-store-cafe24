@@ -74,13 +74,13 @@
 }
 
 #wrap {
-  position: relative;
+  /* position: relative;
   width: 1460px;
-  margin: 27px auto 0;
+  margin: 27px auto 0; */
 }
 #container {
-  width: 1218px;
-  margin: 0 auto;
+  /* width: 1218px;
+  margin: 0 auto; */
 }
 #container:after {
   content: "";
@@ -138,16 +138,18 @@
   text-decoration: none;
 }
 #contents {
-  float: right;
-  width: 1014px;
+  /* float: right;
+  width: 1014px; */
+}
+
+#contents .visual {
+  transform: rotate(90deg);
 }
 
 #contents .visual img {
-  max-width: 100%;
+  /* max-width: 100%; */
 }
-.visual {
-  transform: rotate(90deg);
-}
+
 #banner {
   position: absolute;
   top: 0;

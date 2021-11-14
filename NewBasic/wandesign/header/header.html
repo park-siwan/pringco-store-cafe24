@@ -1,0 +1,119 @@
+  <!--@css(/wandesign/header/header.css)-->
+<h1 module="Layout_LogoTop">
+  <!--@css(/css/module/layout/logotop.css)-->
+  <a href="/index.html">{$mall_name}</a>
+</h1>
+
+<!-- 헤더 중앙 메뉴들 -->
+<ul>
+  <li>
+    <a href="/shopinfo/company.html">
+      About Us
+    </a>
+  </li>
+
+  <div class="store-container">
+    <li class="store">
+      <a href="/category/all/24">
+        Store
+      </a>
+    </li>
+    
+    <div id="category" module="Layout_category">
+      <!--@css(/css/module/layout/category.css)-->
+      <!--@js(/js/module/layout/category.js)-->
+      <div class="position">
+          <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+          <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+          <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+      </div>
+    </div>
+  </div>
+
+    <div class="board-container">
+      <li class="board">
+        <a href="#;">
+          Board
+        </a>
+      </li>
+
+      <div module="Layout_BoardInfo">
+        <!--@css(/css/module/layout/boardInfo.css)-->
+          <li>
+            <a href="{$link_board_list}">{$board_name}</a>
+            {$board_adult_icon}
+          </li>
+          <li>
+            <a href="{$link_board_list}">{$board_name}</a>
+            {$board_adult_icon}
+          </li>
+      </div>
+    </div>
+
+  </ul>
+
+<div module="Layout_statelogoff">
+  <!--@css(/css/module/layout/statelogoff.css)-->
+  <a href="/member/login.html" class="log">Log In</a>
+  <a href="/order/basket.html"
+  >Cart
+  <span
+    class="count {$basket_count_display|display} {$basket_count_display_class}"
+    ><span class="{$basket_count_class}">{$basket_count}</span></span
+  ></a
+>
+  <a href="/member/join.html">Sign up</a>
+</div>
+<div module="Layout_stateLogon">
+  <!--@css(/css/module/layout/statelogon.css)-->
+  <a href="{$action_logout}" class="log">Log Out</a>
+  <a href="/order/basket.html"
+    >Cart
+    <span
+      class="count {$basket_count_display|display} {$basket_count_display_class}"
+      ><span class="{$basket_count_class}">{$basket_count}</span></span
+    ></a
+  >
+  <a href="/myshop/index.html">My Shop</a>
+</div>
+</div>
+
+<div module="Layout_multishopList" class="list">
+<!--@css(/css/module/layout/multishopList.css)-->
+<button type="button" class="toggle">
+  <span>{$current_language}</span>
+</button>
+<ul module="Layout_multishopListitem">
+  <li class="{$selected_class}">
+    <a href="//{$shop_domain}/">
+      <span class="name">{$locale_language}</span>
+      <span class="unit">{$currency_code}</span>
+    </a>
+  </li>
+  <li class="{$selected_class}">
+    <a href="//{$shop_domain}/">
+      <span class="name">{$locale_language}</span>
+      <span class="unit">{$currency_code}</span>
+    </a>
+  </li>
+</ul>
+</div>
+
+<div module="Layout_multishopList" class="thumb">
+<!--@css(/css/module/layout/multishopList.css)-->
+<div module="Layout_multishopListmultioption" class="multiOption">
+  <a href="#none">
+    <span
+      module="Layout_multishopListmultioptionCountry"
+      class="ship"
+    >
+      <strong>Ship to</strong><span> : </span>
+    </span>
+    <span
+      module="Layout_multishopListmultioptionLanguage"
+      class="language"
+    >
+      <strong>Language</strong><span> : {$language_name}</span>
+    </span>
+  </a>
+</div>

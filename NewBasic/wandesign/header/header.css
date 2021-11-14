@@ -1,0 +1,105 @@
+#header .topArea {
+  padding: 60px 50px 0;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#header .topArea ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#header .topArea li {
+  /* margin-right: 70px; */
+  margin-bottom: 8px;
+}
+
+.topArea a {
+  font-weight: 14;
+  font-weight: 600;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topArea a {
+  padding-right: 10px;
+}
+
+#header .topArea .store-container,
+#header .topArea .board-container {
+  position: relative;
+  height: 30px;
+}
+
+/* 헤더 메뉴 호버시 보이는 메뉴들 */
+#header .topArea .store-container:hover > .xans-layout-category,
+#header .topArea .board-container:hover > .xans-layout-boardinfo {
+  opacity: 1;
+  visibility: visible;
+}
+
+#category:hover,
+.xans-layout-boardinfo:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+#header .position li a,
+#header .xans-layout-boardinfo li a {
+  justify-content: flex-start;
+}
+
+#header .special {
+  float: left;
+  border-left: 1px solid #d8d8d8;
+}
+#header .special li {
+  float: left;
+}
+#header .special a {
+  display: block;
+  height: 20px;
+  padding: 16px 15px 9px;
+  border-right: 1px solid #d8d8d8;
+  color: #353535;
+  text-decoration: none;
+}
+#header .special a:hover {
+  color: #008bcc;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #008bcc;
+}
+#header .link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 35px;
+  line-height: 35px;
+}
+#header .link > a,
+#header .link > span {
+  float: left;
+}
+#header .link > a {
+  margin: 0 9px 0 0;
+  padding: 0 10px 0 0;
+  color: #666;
+  text-decoration: none;
+  background: url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif")
+    no-repeat 100% 12px;
+}
+#header .link > span img {
+  vertical-align: middle;
+}
+#header .link .xans-layout-bookmark span {
+  padding-left: 17px;
+  background: url("//img.echosting.cafe24.com/skin/base/layout/ico_bookmark.png")
+    no-repeat 0 1px;
+}
+.guard {
+  height: 176px;
+}

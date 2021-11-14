@@ -2,9 +2,10 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  height: 45px;
 }
 .xans-layout-statelogon > a {
+  width: 100px;
+  height: 30px;
 }
 .xans-layout-statelogon > a:last-child {
   padding-right: 0;

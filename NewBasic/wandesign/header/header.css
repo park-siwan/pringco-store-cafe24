@@ -9,6 +9,7 @@
   height: 130px;
   background-color: white;
 }
+
 #header .topArea {
   padding: 60px 50px 0;
   height: 120px;
@@ -16,38 +17,56 @@
   justify-content: space-between;
   align-items: flex-start;
 }
-#header .topArea ul {
+
+/* 로고 */
+.xans-layout-logotop {
+  z-index: 10;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+}
+.xans-layout-logotop a {
+  font-size: 24px;
+  text-decoration: none;
+  font-style: normal;
+}
+.xans-layout-logotop img {
+  max-width: 130px;
+  height: auto;
 }
 
-#header .topArea li {
-  /* margin-right: 70px; */
-  margin-bottom: 8px;
-}
-
-.topArea a {
-  color: white;
-  font-weight: 14;
-  font-weight: 600;
-  width: 80px;
+#header .topArea ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.topArea a {
-  padding-right: 10px;
+#header .topArea li {
+  /* margin-right: 70px; */
 }
 
+.topArea a {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 메뉴들 공통 */
+#header .topArea .about-container,
 #header .topArea .store-container,
 #header .topArea .board-container {
   position: relative;
+  width: 100px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* 헤더 메뉴 호버시 보이는 메뉴들 */
+/* Store, Board 헤더 메뉴 호버시 공통속성 */
 #header .topArea .store-container:hover > .xans-layout-category,
 #header .topArea .board-container:hover > .xans-layout-boardinfo {
   opacity: 1;
@@ -60,58 +79,137 @@
   visibility: visible;
 }
 
+/* Store 메뉴들 */
+.xans-layout-category {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+  padding-left: 22px;
+}
+.xans-layout-category .position > ul {
+  display: flex;
+  flex-direction: column;
+}
+.xans-layout-category .position > ul > li {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 8px;
+}
+
+/* Board 메뉴들 */
 #header .position li a,
 #header .xans-layout-boardinfo li a {
   justify-content: flex-start;
 }
-
-#header .special {
-  float: left;
-  border-left: 1px solid #d8d8d8;
-}
-#header .special li {
-  float: left;
-}
-#header .special a {
-  display: block;
-  height: 20px;
-  padding: 16px 15px 9px;
-  border-right: 1px solid #d8d8d8;
-  color: #353535;
-  text-decoration: none;
-}
-#header .special a:hover {
-  color: #008bcc;
-  padding-bottom: 7px;
-  border-bottom: 2px solid #008bcc;
-}
-#header .link {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 35px;
-  line-height: 35px;
-}
-#header .link > a,
-#header .link > span {
-  float: left;
-}
-#header .link > a {
-  margin: 0 9px 0 0;
-  padding: 0 10px 0 0;
-  color: #666;
-  text-decoration: none;
-  background: url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif")
-    no-repeat 100% 12px;
-}
-#header .link > span img {
-  vertical-align: middle;
-}
-#header .link .xans-layout-bookmark span {
-  padding-left: 17px;
-  background: url("//img.echosting.cafe24.com/skin/base/layout/ico_bookmark.png")
-    no-repeat 0 1px;
-}
 .guard {
   height: 176px;
+}
+/* 로그인 안되었을 때 */
+.xans-layout-statelogoff {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.xans-layout-statelogoff > a {
+  width: 100px;
+  height: 30px;
+}
+.xans-layout-statelogoff > a:last-child {
+  padding-right: 0;
+}
+.xans-layout-statelogoff .log {
+  background: none;
+}
+.xans-layout-statelogoff > a .count,
+.xans-layout-statelogoff > a .count span {
+  position: relative;
+  display: inline-block;
+  background: url("//img.echosting.cafe24.com/skin/base/layout/bg_basket_count.png")
+    no-repeat;
+}
+.xans-layout-statelogoff > a .count {
+  left: -5px;
+  top: -1px;
+  margin: 0 -5px 0 3px;
+  padding: 0 0 0 7px;
+  vertical-align: middle;
+  background-position: 0 0;
+}
+.xans-layout-statelogoff > a .count span {
+  height: 14px;
+  padding: 1px 7px 1px 0;
+  font-weight: bold;
+  color: #fff;
+  font-size: 11px;
+  line-height: 14px;
+  vertical-align: top;
+  background-position: right -26px;
+}
+
+/* 로그인 되었을때 */
+.xans-layout-boardinfo {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+  padding-left: 22px;
+}
+.xans-layout-boardinfo h2 {
+  height: 20px;
+  color: #2e2e2e;
+  font-size: 12px;
+}
+
+.xans-layout-statelogon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.xans-layout-statelogon > a {
+  width: 100px;
+  height: 30px;
+}
+.xans-layout-statelogon > a:last-child {
+  padding-right: 0;
+}
+.xans-layout-statelogon .myinfo {
+  color: #757575;
+}
+.xans-layout-statelogon .myinfo strong {
+  color: #353535;
+}
+.xans-layout-statelogon .myinfo a {
+  padding: 0 4px 0 10px;
+  color: #757575;
+  font-size: 12px;
+}
+.xans-layout-statelogon > a .count,
+.xans-layout-statelogon > a .count span {
+  position: relative;
+  display: inline-block;
+  background: url("//img.echosting.cafe24.com/skin/base/layout/bg_basket_count.png")
+    no-repeat;
+}
+.xans-layout-statelogon > a .count {
+  left: -4px;
+  top: -1px;
+  margin: 0 -5px 0 6px;
+  padding: 0 0 0 7px;
+  vertical-align: middle;
+  background-position: 0 0;
+}
+.xans-layout-statelogon > a .count span {
+  height: 14px;
+  padding: 1px 8px 1px 0;
+  font-weight: bold;
+  color: #fff;
+  font-size: 11px;
+  line-height: 14px;
+  vertical-align: top;
+  background-position: right -26px;
 }

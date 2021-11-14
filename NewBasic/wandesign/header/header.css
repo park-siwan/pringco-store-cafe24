@@ -1,3 +1,14 @@
+#header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+.inner {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  background-color: white;
+}
 #header .topArea {
   padding: 60px 50px 0;
   height: 120px;
@@ -17,6 +28,7 @@
 }
 
 .topArea a {
+  color: white;
   font-weight: 14;
   font-weight: 600;
   width: 80px;

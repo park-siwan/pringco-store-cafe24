@@ -1,0 +1,38 @@
+#footer {
+  padding: 50px;
+  margin-top: 50px;
+  height: 300px;
+}
+
+#footer h2 {
+  margin-bottom: 30px;
+}
+#footer h3 {
+  margin-bottom: 15px;
+}
+#footer ul {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+#footer ul .item {
+  margin-right: 43px;
+  width: 25%;
+  margin-bottom: 10px;
+}
+#footer ul .item:last-child {
+  margin-right: 0;
+}
+#footer ul .item li {
+  font-size: 11px;
+}
+/* Mobile용 CSS 입력. 767px까지 해당 css가 적용됩니다.  */
+@media (max-width: 767px) {
+  #footer ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #footer ul .item {
+    width: 100%;
+  }
+}

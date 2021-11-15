@@ -1,12 +1,21 @@
 window.onload = () => {
-  var mobileSidebar = document.getElementById("mobile-sidebar");
+  const mobileSidebar = document.getElementById("mobile-sidebar");
 
-  var menuBtn = document.getElementById("sm-menu-btn");
-  console.log(menuBtn);
-  var handleClick = () => {
+  const menuBtn = document.getElementById("sm-menu-btn");
+
+  const overlay = document.getElementById("overlay");
+
+  const handleClickOpen = () => {
     mobileSidebar.classList.add("is-active");
-    console.log("handleClick");
+    overlay.classList.add("is-active");
   };
 
-  menuBtn.addEventListener("click", handleClick);
+  const handleClickClose = () => {
+    mobileSidebar.classList.remove("is-active");
+    overlay.classList.remove("is-active");
+  };
+
+  menuBtn.addEventListener("click", handleClickOpen);
+
+  overlay.addEventListener("click", handleClickClose);
 };

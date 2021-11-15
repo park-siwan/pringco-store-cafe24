@@ -1,9 +1,26 @@
 @charset "utf-8";
 
 /* Layout */
-
 .inner #header a {
   color: black;
+}
+#overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  cursor: pointer;
+  z-index: 99;
+  transition: 1s all ease;
+}
+
+#overlay.is-active {
+  opacity: 0.18;
+  visibility: visible;
 }
 
 #wrap {

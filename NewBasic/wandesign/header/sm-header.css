@@ -7,21 +7,26 @@
 
 #sm-header .sm-topArea {
   padding: 20px 20px 0;
-  height: 120px;
+  height: 34px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 #store {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
+}
+
+.sm-header-logo {
+  width: auto;
+  height: 20px;
 }
 
 #sm-menu-btn {
   background-color: rgba(0, 0, 0, 0);
   color: white;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #mobile-sidebar {
@@ -35,7 +40,7 @@
 
   width: 300px;
   height: 100vh;
-  transition: 0.7s all ease-in-out;
+  transition: 1s all ease;
   overflow-y: auto;
   background-color: white;
   z-index: 100;

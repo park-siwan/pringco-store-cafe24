@@ -1,0 +1,77 @@
+<!--@css(/wandesign/header/sm-header.css)-->
+<!--@js(/wandesign/header/mobileMenu.js)-->
+<div id="sm-header">
+  <div class="sm-topArea">
+    <a class="store" href="/category/all/24">Store</a>
+
+    <h1 module="Layout_LogoTop">
+      <a href="/index.html"><img src="{$logo}" alt="{$mall_name}" /></a>
+    </h1>
+
+    <button id="sm-menu-btn">Menu</button>
+  </div>
+</div>
+
+<div id="mobile-sidebar">
+  <!-- 상단 로그인 로그아웃 -->
+  <div class="mobile-sidebar-wrap">
+    <div module="Layout_statelogoff">
+      <a href="/member/login.html" class="log">Log In</a>
+      <a href="/order/basket.html"
+        >Cart
+        <span
+          class="count {$basket_count_display|display} {$basket_count_display_class}"
+          ><span class="{$basket_count_class}">{$basket_count}</span></span
+        ></a
+      >
+      <a href="/member/join.html">Sign up</a>
+    </div>
+    <div module="Layout_stateLogon">
+      <a href="{$action_logout}" class="log">Log Out</a>
+      <a href="/order/basket.html"
+        >Cart
+        <span
+          class="count {$basket_count_display|display} {$basket_count_display_class}"
+          ><span class="{$basket_count_class}">{$basket_count}</span></span
+        ></a
+      >
+      <a href="/myshop/index.html">My Shop</a>
+    </div>
+    <!-- 아코디언 메뉴들 -->
+    <ul>
+      <div class="about-container">
+        <li>
+          <a href="/shopinfo/company.html">About Us</a>
+        </li>
+      </div>
+      <div class="store-container">
+        <li class="store">
+          <a href="/category/all/24">Store</a>
+        </li>
+        <div id="category" module="Layout_category">
+          <!--@js(/js/module/layout/category.js)-->
+          <div class="position">
+            <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+            <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+            <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="board-container">
+        <li class="board">
+          <a href="#;">Board</a>
+        </li>
+        <div module="Layout_BoardInfo">
+          <li>
+            <a href="{$link_board_list}">{$board_name}</a>
+            {$board_adult_icon}
+          </li>
+          <li>
+            <a href="{$link_board_list}">{$board_name}</a>
+            {$board_adult_icon}
+          </li>
+        </div>
+      </div>
+    </ul>
+  </div>
+</div>

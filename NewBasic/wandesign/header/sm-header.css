@@ -1,0 +1,52 @@
+#sm-header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+#sm-header .sm-topArea {
+  padding: 20px 20px 0;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.store {
+  color: white;
+  font-size: 16px;
+}
+
+#mobile-sidebar {
+  position: fixed;
+  right: -300px;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 300px;
+  height: 100vh;
+  transition: 0.7s all ease-in-out;
+  overflow-y: auto;
+  background-color: white;
+  z-index: 100;
+}
+.mobile-sidebar-wrap {
+  padding: 30px;
+}
+
+#mobile-sidebar.is-active {
+  right: 0;
+}
+
+@media (min-width: 1020px) {
+  #sm-header {
+    display: none;
+  }
+  #mobile-sidebar {
+    display: none;
+  }
+}

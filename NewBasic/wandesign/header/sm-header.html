@@ -17,7 +17,7 @@
 <div id="mobile-sidebar">
   <!-- 상단 로그인 로그아웃 -->
   <div class="mobile-sidebar-wrap">
-    <div module="Layout_statelogoff">
+    <div module="Layout_statelogoff" class="logoff-state">
       <a href="/member/login.html" class="log">Log In</a>
       <a href="/order/basket.html"
         >Cart
@@ -28,7 +28,8 @@
       >
       <a href="/member/join.html">Sign up</a>
     </div>
-    <div module="Layout_stateLogon">
+
+    <div module="Layout_stateLogon" class="logon-state">
       <a href="{$action_logout}" class="log">Log Out</a>
       <a href="/order/basket.html"
         >Cart
@@ -39,15 +40,17 @@
       >
       <a href="/myshop/index.html">My Shop</a>
     </div>
+
     <!-- 아코디언 메뉴들 -->
     <ul>
-      <div class="about-container">
-        <li>
+      <div class="sm-about-container">
+        <li class="sm-about-us">
           <a href="/shopinfo/company.html">About Us</a>
         </li>
       </div>
-      <div class="store-container">
-        <li class="store">
+
+      <div class="sm-store-container">
+        <li class="sm-store">
           <a href="/category/all/24">Store</a>
         </li>
         <div id="category" module="Layout_category">
@@ -59,10 +62,8 @@
           </div>
         </div>
       </div>
-      <div class="board-container">
-        <li class="board">
-          <a href="#;">Board</a>
-        </li>
+
+      <div class="sm-board-container">
         <div module="Layout_BoardInfo">
           <li>
             <a href="{$link_board_list}">{$board_name}</a>
@@ -72,6 +73,38 @@
             <a href="{$link_board_list}">{$board_name}</a>
             {$board_adult_icon}
           </li>
+        </div>
+      </div>
+      <!--@css(/wandesign/footer/footer.css)-->
+      <div id="footer">
+        <div class="footer-inner">
+          <div module="Layout_footer">
+          <ul>
+              <div class="item">
+                <h3>COMPANY INFO</h3>
+                <li>CORPORATE NAME : {$company_name}</li>
+                <li>CEO : {$president_name}</li>
+                <li>{$biz_no_link} {$company_regno}</li>
+              </div>
+
+              <div class="item">
+                <li>
+                  <h3>BANK INFO</h3>
+                </li>
+                <li>농협 302-5043-7590-91</li>
+                <li>황다희(PRINGCO)</li>
+              </div>
+
+              <div class="item">
+                <li><h3>ADDRESS</h3></li>
+                <li>
+                  ADDRESS : {$mall_zipcode} {$mall_addr1} {$mall_addr2}
+                </li>
+                <li>CONTACT : <a href="mailto:{$email}">{$email}</a></strong>
+                </li>
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
     </ul>

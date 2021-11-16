@@ -29,6 +29,7 @@
   font-size: 15px;
 }
 
+/* 사이드바 */
 #mobile-sidebar {
   position: fixed;
   right: -300px;
@@ -44,11 +45,62 @@
   overflow-y: auto;
   background-color: white;
   z-index: 100;
+  overscroll-behavior: contain;
 }
 .mobile-sidebar-wrap {
-  padding: 30px;
+  /* padding: 30px; */
+  padding-top: 30px;
 }
 
+.logoff-state,
+.logon-state {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 0 30px;
+}
+
+.sm-about-container,
+.sm-store-container,
+.sm-board-container {
+  margin-bottom: 10px;
+  padding: 0 30px;
+}
+
+.sm-store-container {
+  margin-bottom: 50px;
+}
+
+.sm-about-us,
+.sm-store,
+.sm-board {
+  margin-bottom: 10px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+.sm-about-us a,
+.sm-store a,
+.sm-board a {
+  font-size: 20px;
+}
+
+.sm-board-container .xans-layout-boardinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sm-board-container .xans-layout-boardinfo li {
+  margin-right: 8px;
+  font-size: 13px;
+}
+.sm-board-container .xans-layout-boardinfo li:last-child {
+  margin-right: 0;
+}
 #mobile-sidebar.is-active {
   right: 0;
 }

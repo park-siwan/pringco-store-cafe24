@@ -27,9 +27,9 @@
   font-size: 11px;
 }
 /* Mobile용 CSS 입력. 767px까지 해당 css가 적용됩니다.  */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   #footer {
-    padding: 46px;
+    padding: 30px;
   }
   #footer ul {
     flex-wrap: wrap;

@@ -29,12 +29,15 @@
     <!--@js(/js/module/layout/quick_view.js)-->
   </head>
   <body>
+    <div id="overlay"></div>
     <div id="skipNavigation">
       <p><a href="#category">전체상품목록 바로가기</a></p>
       <p><a href="#contents">본문 바로가기</a></p>
     </div>
     <div class="inner">
-      <!--@import(/wandesign/header/header.html)-->
+    <!-- 공통헤더 -->
+    <!--@import(/wandesign/header/header.html)-->
+    <!--@import(/wandesign/header/sm-header.html)-->
     </div>
         <div module="Layout_multishopList" class="thumb">
           <!--@css(/css/module/layout/multishopList.css)-->
@@ -59,7 +62,7 @@
   
       </div>
     </div>
-    <hr class="guard" />
+    <div class="guard" ></div>
 
     <div id="wrap">
       <div id="container">

@@ -1,9 +1,22 @@
 @charset "utf-8";
 
 /* Layout */
-.inner #header a {
+.inner #header a,
+.inner #store,
+.inner #sm-menu-btn {
   color: black;
 }
+.topArea h1 a:last-child,
+.sm-topArea h1 a:last-child {
+  display: none;
+}
+.inner #white-logo {
+  display: none;
+}
+.inner #black-logo {
+  display: inline-block;
+}
+
 #overlay {
   opacity: 0;
   visibility: hidden;
@@ -33,7 +46,7 @@
   margin: 27px auto 0; */
 }
 #container {
-  width: 1218px;
+  /* width: 1218px; */
   margin: 0 auto;
 }
 #container:after {

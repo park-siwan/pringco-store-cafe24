@@ -2,34 +2,6 @@
 <div module="Product_menupackage">
   <!--@css(/css/module/product/menupackage.css)-->
   <!--@js(/js/module/product/menucategory.js)-->
-  <div class="path" module="product_headcategory">
-    <span>현재 위치</span>
-    <ol>
-      <li><a href="/">홈</a></li>
-      <li class="{$disp_cate_1|display}">
-        <a href="{$link_product_list_1}">{$name_1}</a>
-      </li>
-      <li class="{$disp_cate_2|display}">
-        <a href="{$link_product_list_2}">{$name_2}</a>
-      </li>
-      <li class="{$disp_cate_3|display}">
-        <a href="{$link_product_list_3}">{$name_3}</a>
-      </li>
-      <li class="{$disp_cate_4|display}">
-        <strong><a href="{$link_product_list_4}">{$name_4}</a></strong>
-      </li>
-    </ol>
-  </div>
-
-  <div class="title" module="product_headcategory">
-    <p class="banner">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</p>
-    <h2><span>{$title_text_or_image}</span></h2>
-    <span class="likeButton {$disp_likecate_class}"
-      ><button type="button">
-        {$disp_likecate_icon}<strong>{$disp_likecate_count}</strong>
-      </button></span
-    >
-  </div>
 
   <!--@import(/product/shoppQ/searchContent.html)-->
 
@@ -280,7 +252,7 @@
             ></a>
             <span class="wish">{$list_wish_icon}</span>
           </div>
-          <div class="icon">
+          <!-- <div class="icon">
             <div class="promotion">
               {$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon}
               {$product_icons} {$today_arrival_icon} {$pickup_icon}
@@ -295,7 +267,7 @@
               <div class="option">{$option_preview_icon}</div>
               {$basket_icon} {$zoom_icon}
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="description">
           <span class="chk"
@@ -344,7 +316,7 @@
             ></a>
             <span class="wish">{$list_wish_icon}</span>
           </div>
-          <div class="icon">
+          <!-- <div class="icon">
             <div class="promotion">
               {$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon}
               {$product_icons} {$today_arrival_icon} {$pickup_icon}
@@ -359,7 +331,7 @@
               <div class="option">{$option_preview_icon}</div>
               {$basket_icon} {$zoom_icon}
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="description">
           <span class="chk"

@@ -24,6 +24,9 @@
 }
 
 .ec-base-product .prdList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   /* min-width: 756px; */
   margin: -20px 0 0;
@@ -34,10 +37,13 @@
   position: relative;
   display: inline-block;
   margin: 30px 0 20px;
+
   color: #757575;
   vertical-align: top;
 }
-
+/* .ec-base-product .prdList > li:nth-child(odd) {
+  padding-right: 15px;
+} */
 .ec-base-product .prdList .chk {
   position: absolute;
   top: -10px;
@@ -75,7 +81,7 @@
 }
 .ec-base-product .prdList .thumbnail .icon {
   margin: 10px 0 0;
-  border-bottom: 1px solid #e8e8e8;
+  /* border-bottom: 1px solid #e8e8e8; */
   vertical-align: middle;
 }
 .ec-base-product .prdList .thumbnail .icon:after {
@@ -127,15 +133,16 @@
 
 .ec-base-product .prdList .description {
   margin: 0 auto;
-  padding: 0 7px;
   font-size: 12px;
   line-height: 18px;
   text-align: center;
 }
 .ec-base-product .prdList .description .name {
-  display: block;
-  text-align: left;
-  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: left; */
+  font-weight: 700;
 }
 .ec-base-product .prdList .description .name a {
   color: #2e2e2e;
@@ -149,7 +156,12 @@
 
 /* grid */
 .ec-base-product ul.grid2 > li {
-  width: 50%;
+  width: 49%;
+}
+@media (max-width: 1024px) {
+  .ec-base-product ul.grid2 > li {
+    width: 100%;
+  }
 }
 .ec-base-product ul.grid3 > li {
   width: 33.33%;
@@ -177,14 +189,19 @@
 }
 .ec-base-product ul.grid2 li .thumbnail {
   float: left;
-  width: 220px;
+  width: 100%;
   text-align: left;
   margin: 0;
 }
 .ec-base-product ul.grid2 li .description {
-  float: left;
-  width: 247px;
-  padding: 0 20px;
+  /* float: left;
+   */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  /* padding: 0 20px; */
 }
 .ec-base-product ul.grid2 li .description .chk {
   position: static;
@@ -195,8 +212,10 @@
 .ec-base-product .spec {
   margin: 0;
 }
-.ec-base-product .spec li {
-  text-align: left;
+.ec-base-product .spec li span {
+  /* text-align: left; */
+  margin-top: 10px !important;
+  font-weight: 500 !important;
 }
 .ec-base-product .spec li .title {
   font-weight: normal;

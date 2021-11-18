@@ -8,10 +8,13 @@
 .storeMenu-position li {
   padding: 20px;
 }
+.storeMenu-position li a.is-active {
+  text-decoration: underline;
+}
 @media (min-width: 1020px) {
   .storeMenu-position {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 400;
     justify-content: space-between;
   }
 }

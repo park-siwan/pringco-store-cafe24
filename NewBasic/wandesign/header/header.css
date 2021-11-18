@@ -58,20 +58,20 @@
   }
 
   /* Store, Board 헤더 메뉴 호버시 공통속성 */
-  #header .topArea .store-container:hover > .xans-layout-category,
+  #header .topArea .store-container:hover > .xans-layout-category .position,
   #header .topArea .board-container:hover > .xans-layout-boardinfo {
     opacity: 1;
     visibility: visible;
   }
 
-  #category:hover,
+  .xans-layout-category .position:hover,
   .xans-layout-boardinfo:hover {
     opacity: 1;
     visibility: visible;
   }
 
   /* Store 메뉴들 */
-  .xans-layout-category {
+  .xans-layout-category .position {
     position: absolute;
     top: 27px;
     left: 0;

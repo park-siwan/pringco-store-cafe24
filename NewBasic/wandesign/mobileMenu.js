@@ -6,6 +6,7 @@ window.onload = () => {
   const overlay = document.getElementById("overlay");
 
   const handleClickOpen = () => {
+    console.log("active");
     mobileSidebar.classList.add("is-active");
     overlay.classList.add("is-active");
   };

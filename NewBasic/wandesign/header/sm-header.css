@@ -77,7 +77,12 @@
 .sm-board {
   margin-bottom: 10px;
 }
-
+.sm-about-us .is-select,
+.sm-store .is-select {
+  color: #cb1b18;
+  font-weight: 700;
+  text-decoration: underline;
+}
 ul li {
   margin-bottom: 6px;
 }

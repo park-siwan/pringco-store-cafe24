@@ -1,4 +1,64 @@
+/* 모바일 일때 */
+@media (max-width: 1020px) {
+  .ec-base-table table {
+    display: table;
+  }
+  .review-num {
+    display: none;
+  }
+  .review-writer {
+    display: none;
+  }
+  .review-date {
+    display: none;
+  }
+  .review-hit {
+    display: none;
+  }
+  .qna-num {
+    font-size: 10px;
+    width: 44px;
+  }
+  .qna-writer {
+    font-size: 10px;
+    width: 44px;
+  }
+  .qna-date {
+    font-size: 10px;
+    width: 44px;
+  }
+}
+/* 데스크탑 일때 */
+@media (min-width: 1019px) {
+  .review-num {
+    display: table-cell;
+    width: 70px;
+  }
+  .review-writer {
+    display: table-cell;
+  }
+  .review-date {
+    display: table-cell;
+  }
+  .review-hit {
+    display: table-cell;
+  }
+  .qna-num {
+    font-size: 12px;
+    width: 70px;
+  }
+  .qna-writer {
+    font-size: 12px;
+    width: 70px;
+  }
+  .qna-date {
+    font-size: 12px;
+    width: 79px;
+  }
+}
+
 .ec-base-table table {
+  display: table;
   position: relative;
   margin: 10px 0 0;
   border: 1px solid #d7d5d5;
@@ -192,6 +252,7 @@
   padding-right: 0;
 }
 .ec-base-table.typeList .center td.left {
+  max-width: 65%;
   padding-left: 10px;
 }
 .ec-base-table.typeList .center td.right {

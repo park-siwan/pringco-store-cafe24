@@ -1184,26 +1184,26 @@
               상품사용후기
             </caption>
             <colgroup>
-              <col style="width: 70px" />
+              <col class="review-num" style="width: 70px" />
               <col style="width: auto" />
-              <col style="width: 100px" />
-              <col style="width: 100px" />
-              <col style="width: 80px" />
+              <col class="review-writer" style="width: 100px" />
+              <col class="review-date" style="width: 100px" />
+              <col class="review-hit" style="width: 80px" />
               <col style="width: 80px" class="{$use_point_display|display}" />
             </colgroup>
             <thead>
               <tr>
-                <th scope="col">번호</th>
+                <th class="review-num" scope="col">번호</th>
                 <th scope="col">제목</th>
-                <th scope="col">작성자</th>
-                <th scope="col">작성일</th>
-                <th scope="col">조회</th>
+                <th class="review-writer" scope="col">작성자</th>
+                <th class="review-date" scope="col">작성일</th>
+                <th class="review-hit" scope="col">조회</th>
                 <th scope="col" class="{$use_point_display|display}">평점</th>
               </tr>
             </thead>
             <tbody class="center">
               <tr>
-                <td>{$no}</td>
+                <td class="review-num">{$no}</td>
                 <td class="subject left txtBreak">
                   {$icon_re}{$icon_lock}
                   <a href="{$link_board_detail}{$param_read}">{$subject}</a>
@@ -1211,9 +1211,9 @@
                     >{$comment_count}</span
                   >
                 </td>
-                <td>{$member_icon} {$writer}</td>
-                <td class="txtInfo txt11">{$write_date}</td>
-                <td class="txtInfo txt11">{$hit_count}</td>
+                <td class="review-writer">{$member_icon} {$writer}</td>
+                <td class="review-date" class="txtInfo txt11">{$write_date}</td>
+                <td class="review-hit" class="txtInfo txt11">{$hit_count}</td>
                 <td class="{$use_point_display|display}">
                   <img
                     src="//img.echosting.cafe24.com/skin/base/board/ico_point{$point_count}.gif"
@@ -1222,7 +1222,7 @@
                 </td>
               </tr>
               <tr>
-                <td>{$no}</td>
+                <td class="review-num">{$no}</td>
                 <td class="subject left txtBreak">
                   {$icon_re}{$icon_lock}
                   <a href="{$link_board_detail}{$param_read}">{$subject}</a>
@@ -1230,9 +1230,9 @@
                     >{$comment_count}</span
                   >
                 </td>
-                <td>{$member_icon} {$writer}</td>
-                <td class="txtInfo txt11">{$write_date}</td>
-                <td class="txtInfo txt11">{$hit_count}</td>
+                <td class="review-writer">{$member_icon} {$writer}</td>
+                <td class="review-date" class="txtInfo txt11">{$write_date}</td>
+                <td class="review-hit" class="txtInfo txt11">{$hit_count}</td>
                 <td class="{$use_point_display|display}">
                   <img
                     src="//img.echosting.cafe24.com/skin/base/board/ico_point{$point_count}.gif"
@@ -1324,27 +1324,27 @@
               상품 Q&amp;A
             </caption>
             <colgroup>
-              <col style="width: 70px" />
-              <col style="width: 134px" />
-              <col style="width: auto" />
-              <col style="width: 80px" />
-              <col style="width: 100px" />
-              <col style="width: 55px" />
+              <!-- <col style="width: 36px" /> -->
+              <!-- <col style="width: 134px" /> -->
+              <!-- <col style="width: auto" />
+              <col style="width: 44px" />
+              <col style="width: 76px" /> -->
+              <!-- <col style="width: 55px" /> -->
             </colgroup>
             <thead>
               <tr>
-                <th scope="col">번호</th>
-                <th scope="col">카테고리</th>
-                <th scope="col">제목</th>
-                <th scope="col">작성자</th>
-                <th scope="col">작성일</th>
-                <th scope="col">조회</th>
+                <th class="qna-num" scope="col">번호</th>
+                <!-- <th scope="col">카테고리</th> -->
+                <th  scope="col">제목</th>
+                <th class="qna-writer" scope="col">작성자</th>
+                <th class="qna-date" scope="col">작성일</th>
+                <!-- <th scope="col">조회</th> -->
               </tr>
             </thead>
             <tbody class="center">
               <tr>
-                <td>{$no}</td>
-                <td>{$category_name}</td>
+                <td class="qna-num">{$no}</td>
+                <!-- <td>{$category_name}</td> -->
                 <td class="subject left txtBreak">
                   {$icon_re}{$icon_lock}
                   <a href="{$link_board_detail}{$param_read}">{$subject}</a>
@@ -1352,13 +1352,13 @@
                     >{$comment_count}</span
                   >
                 </td>
-                <td>{$member_icon} {$writer}</td>
-                <td class="txtInfo txt11">{$write_date}</td>
-                <td class="txtInfo txt11">{$hit_count}</td>
+                <td class="qna-writer">{$member_icon} {$writer}</td>
+                <td class="qna-date" class="txtInfo txt11">{$write_date}</td>
+                <!-- <td class="txtInfo txt11">{$hit_count}</td> -->
               </tr>
               <tr>
-                <td>{$no}</td>
-                <td>{$category_name}</td>
+                <td class="qna-num">{$no}</td>
+                <!-- <td>{$category_name}</td> -->
                 <td class="subject left txtBreak">
                   {$icon_re}{$icon_lock}
                   <a href="{$link_board_detail}{$param_read}">{$subject}</a>
@@ -1366,9 +1366,9 @@
                     >{$comment_count}</span
                   >
                 </td>
-                <td>{$member_icon} {$writer}</td>
-                <td class="txtInfo txt11">{$write_date}</td>
-                <td class="txtInfo txt11">{$hit_count}</td>
+                <td class="qna-writer">{$member_icon} {$writer}</td>
+                <td class="txtInfo txt11 qna-date">{$write_date}</td>
+                <!-- <td class="txtInfo txt11">{$hit_count}</td> -->
               </tr>
             </tbody>
           </table>

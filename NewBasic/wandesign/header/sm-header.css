@@ -20,8 +20,9 @@
 }
 
 .sm-header-logo {
+  margin-top: 26px;
   width: auto;
-  height: 20px;
+  height: auto;
 }
 
 #sm-menu-btn {

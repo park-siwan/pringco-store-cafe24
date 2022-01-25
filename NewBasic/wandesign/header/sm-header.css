@@ -14,8 +14,9 @@
 }
 
 #store {
-  color: white;
-  font-size: 15px;
+  color: #c94a25;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .sm-header-logo {
@@ -25,8 +26,9 @@
 
 #sm-menu-btn {
   background-color: rgba(0, 0, 0, 0);
-  color: white;
-  font-size: 15px;
+  color: #c94a25;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 /* 사이드바 */

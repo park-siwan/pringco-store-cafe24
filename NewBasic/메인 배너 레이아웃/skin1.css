@@ -1,7 +1,7 @@
 .xans-bannermanage2 {
   display: inline-block;
 }
-.xans-bannermanage2 div:nth-child(n + 5) {
+/* .xans-bannermanage2 div:nth-child(n + 5) {
   float: left;
   width: 50%;
-}
+} */

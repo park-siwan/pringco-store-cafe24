@@ -87,13 +87,13 @@
   text-decoration: underline;
 }
 ul li {
-  margin-bottom: 6px;
+  margin-bottom: 10.5px;
 }
 
 .sm-about-us a,
 .sm-store a,
 .sm-board a {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .sm-board-container .xans-layout-boardinfo {

@@ -1,5 +1,46 @@
 @charset "utf-8";
+.guard {
+  height: 116px;
+}
+#wrap {
+  width: 100%;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+#container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+#contents {
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #container {
+    max-width: 1020px;
+    padding: 0 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #container {
+    max-width: 1140px;
+  }
+}
 
+#contents .visual {
+  /* transform: rotate(90deg); */
+}
+
+#contents .visual img {
+  /* max-width: 100%; */
+  width: 100%;
+  height: auto;
+  /* transform: rotate(
+    90deg); */
+}
 /* Layout */
 .inner #header a,
 .inner #store,
@@ -38,20 +79,11 @@
   touch-action: none;
 }
 
-#wrap {
-  max-width: 1140px;
-  padding: 0 15px;
-  margin: 0 auto;
-  padding-top: 100px;
-}
-#container {
-  /* width: 1218px; */
-}
-#container:after {
-  content: "";
+/* #container:after {
+  content: '';
   display: block;
   clear: both;
-}
+} */
 #sidebar {
   float: left;
   width: 180px;
@@ -70,15 +102,15 @@
   font-weight: bold;
   line-height: 20px;
 }
-#sidebar .banner [class*="Banner"]:before {
+#sidebar .banner [class*='Banner']:before {
   position: absolute;
   top: 11px;
   left: 0;
-  content: "";
+  content: '';
   display: block;
   width: 20px;
   height: 20px;
-  background: url("//img.echosting.cafe24.com/skin/base/layout/sfix_sidebar_banner.png")
+  background: url('//img.echosting.cafe24.com/skin/base/layout/sfix_sidebar_banner.png')
     no-repeat;
 }
 #sidebar .banner p a.giftBanner:before {
@@ -99,24 +131,8 @@
 #sidebar .banner p a.calendarBanner:before {
   background-position: -100px -50px;
 }
-#sidebar .banner [class*="Banner"]:hover {
+#sidebar .banner [class*='Banner']:hover {
   text-decoration: none;
-}
-#contents {
-  /* float: right;
-  width: 1014px; */
-}
-
-#contents .visual {
-  /* transform: rotate(90deg); */
-}
-
-#contents .visual img {
-  /* max-width: 100%; */
-  width: 100%;
-  height: auto;
-  /* transform: rotate(
-    90deg); */
 }
 
 #banner {
@@ -175,7 +191,7 @@
   padding: 0 0 0 12px;
   margin: 0 0 0 8px;
   color: #757575;
-  background: url("//img.echosting.cafe24.com/skin/base/layout/ico_path.gif")
+  background: url('//img.echosting.cafe24.com/skin/base/layout/ico_path.gif')
     no-repeat 0 10px;
 }
 .path li:first-child {
@@ -214,7 +230,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
+  content: '';
   width: 1px;
   height: 13px;
   border-left: 1px solid #d9d9d9;
@@ -233,7 +249,7 @@
   position: absolute;
   top: 50%;
   left: 0;
-  content: "";
+  content: '';
   width: 2px;
   height: 2px;
   margin: -2px 0 0 0;

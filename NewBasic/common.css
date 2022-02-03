@@ -3,7 +3,18 @@
 /* **************************** //필수 CSS 수정 및 삭제 불가 **************************** */
 
 /* tag reset */
-
+* {
+  --moz-osx-font-smoothing: grayscale;
+  --webkit-font-smoothing: antialiased;
+}
+*,
+html {
+  box-sizing: border-box;
+}
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
 html,
 body,
 div,
@@ -41,7 +52,8 @@ html {
 
 body,
 code {
-  //font: 0.75em Verdana, Dotum, AppleGothic, sans-serif;
+  /* font: 0.75em Verdana, Dotum, AppleGothic, sans-serif; */
+  display: block;
   color: #353535;
   background: #fff;
 }

@@ -1,0 +1,16 @@
+#catetab_new_button { position:relative; clear:both; margin:0px auto 25px; text-align:center; }
+#catetab_new_button img { display:inline-block; width:30px; }
+
+
+#catetab_best_button { position:relative; clear:both; margin:50px auto 25px; text-align:center; }
+#catetab_best_button img { display:inline-block; width:30px; }
+
+
+#catetab_add_button { position:relative; clear:both; margin:50px auto 25px; text-align:center; }
+#catetab_add_button img { display:inline-block; width:30px; }
+
+
+
+/* 분류페이지 상품목록 탭 */   
+#sub_catetab_button { position:absolute; right:0; margin-top:-53px; }
+#sub_catetab_button img { display:inline-block; width:30px; }

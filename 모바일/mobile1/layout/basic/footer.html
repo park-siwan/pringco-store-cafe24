@@ -1,0 +1,127 @@
+<footer module="layout_footerPackage">
+    <!--@css(/css/module/layout/footerPackage.css)-->
+     
+   
+    
+    <div id="insta_box_line"></div>
+    
+    <ul class="util_menu">
+        <li><a href="/shopinfo/company.html">ABOUT US</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</li>    
+        <li><a href="/shopinfo/guide.html" >GUIDE</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</li>
+        <li><a href="/member/mall_agreement.html">AGREEMENT</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</li>
+        <li><a href="/member/privacy.html">개인정보처리방침</a></li>            
+    </ul>  
+    
+    <div class="footerMenu">        
+       <div class="customer"> 
+            <!-- 고객센터 수정 -->
+            <!--@import(/itsme/html/customer.html)-->
+            <!-- // 고객센터 수정 -->                         
+       </div> 
+        
+       <div class="customer2"> 
+            <!-- 은행정보 수정 -->
+            <!--@import(/itsme/html/bankinfo.html)-->
+            <!-- // 은행정보 수정 -->  
+       </div>
+        
+       <div class="customer3"> 
+            <!-- 배송조회 수정 -->
+            <!--@import(/itsme/html/delivery.html)-->
+            <!-- // 배송조회 수정 --> 
+       </div> 
+        
+       <div class="cs_btnarea">
+           <div module="layout_info" class="cs_bt01"><a href="http://pf.kakao.com/_ljXNC/chat">카카오톡 문의 :)</a></div>
+           <div class="cs_bt01"><a href="/board/product/list.html?board_no=6">Q&amp;A</a></div>
+           <div class="cs_bt01"><a href="#none" onclick="javascript:isPCver();" class="btnUtil">PC 버전</a></div>
+       </div>
+    </div>  
+    
+    
+    <div class="shop_info" module="Layout_footer">
+        <p class="shop_txt2">COMPANY.&nbsp;&nbsp;{$company_name}</p>
+        <p class="shop_txt3">OWNER.&nbsp;&nbsp;{$president_name}</p>
+        <p class="shop_txt_line"></p>
+        <p class="shop_txt">MASTER.&nbsp;&nbsp;{$cpo_name}</p>
+        <p class="shop_txt2">BUSINESS LICENSE.&nbsp;&nbsp;{$company_regno}</p>
+        <p class="shop_txt2">ONLINE LICENSE.&nbsp;&nbsp;{$network_regno}</p>    
+        <p class="shop_txt3">TEL.&nbsp;&nbsp;{$phone}</p>
+        <p class="shop_txt_line"></p>
+        <p class="shop_txt">E-MAIL.&nbsp;&nbsp;<a href="mailto:{$cpo_email}">{$cpo_email}</a></p>
+        <p class="shop_txt2">ADD.&nbsp;&nbsp;{$mall_addr1}{$mall_addr2}</p>    
+    </div>
+    
+    <div class="policy_back">       
+        <div class="sns_icon">            
+            <!-- sns 수정 -->
+            <!--@import(/itsme/html/sns.html)-->
+            <!-- // sns 수정 -->       
+        </div>
+        <div class="copy_con">
+            <div class="copyright" module="Layout_footer">(c) {$mall_name}. ALL RIGHTS RESERVED. </div>            
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<div id="progressPaybar" style="display:none;">
+    <!-- 배경 -->
+    <div id="progressPaybarBackground" class="layerProgress"></div>
+    <!-- 진행바 -->
+    <div id="progressPaybarView">
+        <p class="graph">현재 결제가 진행중입니다.</p>
+        <p class="txt">
+            본 결제 창은 결제완료 후 자동으로 닫히며, <br>
+            결제 진행 중에 본 결제 창을 닫으시면<br>
+            주문이 되지 않으니 <br>
+            결제 완료 될 때 까지 닫지 마시기 바랍니다.
+        </p>
+    </div>
+</div>
+<div module="Layout_multishopShipping" class="ec-base-layer typeModal">
+    <!--@css(/css/module/layout/multishopShipping.css)-->
+    <!--@js(/js/module/layout/multishopShipping.js)-->
+    <h1>WORLD SHIPPING</h1>   
+    <div class="wrap worldshipLayer">
+        <p class="desc">PLEASE SELECT THE DESTINATION COUNTRY AND LANGUAGE :</p>
+        <div class="select">
+            <select module="Layout_multishopShippingCountrylist">
+                <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+                <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+            </select>
+        </div>
+        <div class="select">
+            <select module="Layout_multishopShippingLanguagelist">
+                <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+                <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+            </select>
+        </div>
+    </div>
+    <div class="ec-base-button gFull">
+        <a href="#none" class="btnSubmit">GO</a>
+    </div>
+    <a href="#none" class="btnClose">닫기</a>
+</div>
+
+
+
+
+<!-- sso_gotop -->
+
+<!-- // sso_gotop -->
+
+
+
+
+<div module="mobilequick_display">
+    {$quick_link}
+    {$quick_button}
+</div>

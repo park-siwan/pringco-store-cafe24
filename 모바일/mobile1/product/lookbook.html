@@ -1,0 +1,38 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+
+<div module="Product_menupackage">
+    <!--@css(/css/module/product/menuPackage.css)-->
+    <div id="lookbook_ti" module="product_headcategory">
+        <h2>{$title_text_or_image}</h2>
+    </div>
+</div>
+
+
+
+<div class="ec-base-product typeLookbook" module="product_listnormal">
+
+    <!--
+        $count = 8
+        $moreview = yes
+        $cache = no
+    -->
+    
+    
+    <ul class="grid2">
+        <li>
+            <div class="thumbnail"><a href="/product/lookbook_detail.html{$param}"><img src="{$image_medium}" alt="{$seo_alt_tag}"></a></div>
+        </li>
+        <li>
+            <div class="thumbnail"><a href="/product/lookbook_detail.html{$param}"><img src="{$image_medium}" alt="{$seo_alt_tag}"></a></div>
+        </li>
+    </ul>
+</div>
+
+
+
+<div module="product_listmore" class="paginate typeMoreview">
+    <a href="#none" onclick="{$more_action}">
+        MORE VIEW <span id="more_current_page">{$current_page}</span>/<span id="more_total_page">{$total_page}</span><span class="icoMore"></span>
+    </a>
+</div>

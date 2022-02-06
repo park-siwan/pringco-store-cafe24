@@ -1,0 +1,35 @@
+.xans-layout-searchheader { display:none; position:absolute; top:0px; left:0; right:0; z-index:200; background-color:#fff; border-radius:1px; }
+.xans-layout-searchheader .searchForm { position:relative; margin:25px 61px 15px 14px; padding:0 34px 0 33px; border:1px solid #ddd; background:url("http://img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bg_search.png") no-repeat 7px 8px; background-size:20px 20px; border-radius:3px; -moz-box-sizing:border-box; box-sizing:border-box; }
+.xans-layout-searchheader .btnDelete { position:absolute; right:7px; top:8px; width:20px; height:20px; border:0; cursor:pointer; overflow:hidden; text-indent:100%; font-size:0; white-space:nowrap; background:url("http://img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_delete.png") no-repeat 0 0; background-size:20px 20px; }
+.xans-layout-searchheader #keyword { width:100%; height:35px; padding:0; border:0;  font-size:14px; }
+.xans-layout-searchheader .btnClose {
+    position:absolute; right:14px; top:26px; width:40px; height:35px; margin:0; padding:0;
+    border:1px solid #ddd; border-radius:4px; outline-style:none; cursor:pointer;
+    background:#fff; font-size:13px; text-align:center;
+ }
+.xans-layout-searchheader .tab { background: #fff; }
+.xans-layout-searchheader .tab ul { height: 36px; border-bottom: 1px solid #eee; }
+.xans-layout-searchheader .tab ul:after { content: ""; display: block; clear: both; }
+.xans-layout-searchheader .tab li.selected { background: #eee; }
+.xans-layout-searchheader .tab li { float: left; width: 50%; height: 36px; text-align: center; vertical-align: middle; background: #fff; }
+.xans-layout-searchheader .tab li.selected a { border-top:1px solid #eee; margin:-1px 0px 0 0; color: #111; }
+.xans-layout-searchheader .tab li a { display:inline-block; width:100%; color: #999; font-size:13px; line-height:35px; }
+
+.xans-layout-searchheader .xans-search-hotkeyword { background:#fff; }
+.xans-layout-searchheader .xans-search-hotkeyword ul { overflow-y:auto; max-height:350px; padding:10px 20px 20px 20px; border-bottom:1px solid #d5d5d5; text-align:left; font-size:0; }
+.xans-layout-searchheader .xans-search-hotkeyword li { position:relative; clear:both; border-bottom:1px solid #eee; line-height:25px; padding-top:5px; }
+.xans-layout-searchheader .xans-search-hotkeyword li a { padding-left:14px; color:#222; font-size:13px; }
+
+.xans-layout-searchheader .xans-search-recentkeyword { background:#fff; }
+.xans-layout-searchheader .xans-search-recentkeyword p { padding:30px 0 25px; color:#222; font-size:13px; text-align:center; }
+.xans-layout-searchheader .xans-search-recentkeyword ul { overflow-y:auto; max-height:280px; text-align:left; padding:10px 20px 20px 20px; }
+.xans-layout-searchheader .xans-search-recentkeyword li { position:relative; padding:0 39px 0 0; border-bottom:1px solid #eee; }
+.xans-layout-searchheader .xans-search-recentkeyword li a { display:block; padding:10px 0 9px 14px; color:#222; font-size:13px; }
+.xans-layout-searchheader .xans-search-recentkeyword li .btnDelete { position:absolute; right:14px; top:10px; overflow:hidden; width:20px; height:20px; padding:0; border:0; text-indent:100%; white-space:nowrap; background:url("http://img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_delete.png") no-repeat 0 0; background-size:20px 20px; }
+.xans-layout-searchheader .xans-search-recentkeyword .button { padding:0px 0 25px 0; text-align:center; background:#fff; }
+.xans-layout-searchheader .xans-search-recentkeyword .button .btnDeleteAll {
+    display:inline-block; height:29px; line-height:29px; margin:0; padding:0 18px; border:1px solid #ddd;
+    font-size:12px; cursor:pointer; vertical-align:middle; color:#444;
+    background-color:#fff;
+    border-radius:3px; -moz-box-sizing:border-box; box-sizing:border-box;
+ }

@@ -1,0 +1,208 @@
+.ec-base-product .best_cate_blank { height:40px; position:relative; clear:both; }
+
+
+.ec-base-product .thumbnail .best_label { z-index:1; position:absolute; top:0; left:0; width:25%; height:18x; background:#000; color:#fff; text-align:center; font-size:10px; line-height:18px; }
+.ec-base-product .btnNormal { font-size:11px; padding:0 5px; height:22px; line-height:20px; margin-top:10px; }
+
+
+.ec-base-product { clear:both; padding:0; background-color:#fff; }
+.ec-base-product h2 { font-size:13px; font-family:'Lato', sans-serif; font-weight:400; color:#333; text-align:center; margin-bottom:20px; }
+.ec-base-product .m_cate_weekly_ti { font-size:14px; font-family:'Lato', sans-serif; font-weight:normal; color:#444; text-align:center; letter-spacing:2px; margin:50px 0 20px 0; }
+.ec-base-product h3 { margin-bottom:14px; }
+.ec-base-product img { max-width:100%; }
+.ec-base-product > ul { padding:14px 0 0; }
+.ec-base-product li { vertical-align:top; }
+
+.ec-base-product [class*="grid"] { display:table; table-layout:fixed; width:100%; box-sizing:border-box; padding:0 4px 0 5px; font-size:0; line-height:0; }
+.ec-base-product [class*="grid"] > li { display:inline-block; margin:0 0 10px; vertical-align:top; text-align:center; font-size:11px; line-height:1.4; }
+
+/* 2칸 3칸 그리드 변경시 상품정보부분 왼쪽 공백 처리 */
+.ec-base-product .description [class*="grid"] { padding:0; }
+
+
+
+.ec-base-product .thumbnail { position:relative; margin:0 4px 0px; }
+.ec-base-product .thumbnail a { display:block; }
+.ec-base-product .thumbnail a img { display:block; width:100%; vertical-align:top; }
+.ec-base-product .thumbnail .prdIcon { position:absolute; top:0; left:0; width:100%; height:100%; background-repeat:no-repeat; background-size:20% auto; }
+
+.ec-base-product .description { min-height:10px; margin:10px 7px 20px; line-height:1.5em; text-align:center; }
+.ec-base-product .description .name { line-height:1.3em; word-wrap:break-word; margin:0 0 5px; font-weight:normal; }
+.ec-base-product .description .name a { color:#000; }
+.ec-base-product .description .name_blank { clear:both; height:5px; }
+.ec-base-product .description .icon { margin:5px 0 0px; padding:0; }
+.ec-base-product .description .icon img { height:10px; border:1px solid #fff; }
+.ec-base-product .description .price { margin:0 0 0px; }
+.ec-base-product .description .strike { text-decoration:line-through; }
+.ec-base-product .description .color { overflow:hidden; margin:2px 0 3px ; line-height:1em; font-size:0px; }
+.ec-base-product .description .color .chips { display:inline-block; width:10px; height:2px; margin:2px 1px ; font-size:0; line-height:0; border:1px solid #ccc; }
+.ec-base-product .description ul li { width:100%; }
+.ec-base-product .description .spec {  }
+
+
+
+
+/* 장바구니_관심 */
+.ec-base-product .add_icon { position:absolute; right:0px; bottom:7px; z-index:10; text-align:center; }
+.ec-base-product .thumbnail .wish { position:relative; margin:0 5px; }
+.ec-base-product .thumbnail .wish img { width:16px; }
+
+.ec-base-product .thumbnail .cart { position:relative; padding:0; margin:0 0 0 0px; }
+.ec-base-product .thumbnail .cart img { width:16px; }
+
+/* 좋아요 */
+.ec-base-product .likeButton button { position:absolute; left:7px; bottom:7px; border:0; background:none; outline:none;  }
+.ec-base-product .likeButton button img { width:16px; margin-top:0px; }
+.ec-base-product .likeButton button strong { margin:0px 0 0 2px; font-size:11px; line-height:16px; color:#757575; font-weight:normal; }
+.ec-base-product .likeButton.selected button strong { line-height:16px; color:#2e2e2e; font-weight:normal; }
+
+
+
+/* 갤러리 좋아요 */
+.ec-base-product .gall_likeButton button { position:absolute; left:7px; top:7px; border:0; background:none; z-index:10;  outline:none; }
+.ec-base-product .gall_likeButton button img { width:16px; margin-top:0px; }
+.ec-base-product .gall_likeButton button strong { margin:0px 0 0 2px; font-size:11px; line-height:16px; color:#757575; font-weight:normal; }
+.ec-base-product .gall_likeButton.selected button strong { line-height:16px; color:#2e2e2e; font-weight:normal; }
+
+
+/* 장바구니_관심 */
+.ec-base-product.typeGallery .add_icon { position:absolute; right:0px; top:7px; z-index:10; text-align:center; }
+.ec-base-product.typeGallery .thumbnail .wish { position:relative; margin:0 5px; }
+.ec-base-product.typeGallery .thumbnail .wish img { width:16px; }
+
+.ec-base-product.typeGallery .thumbnail .cart { position:relative; padding:0; margin:0 0 0 0px; }
+.ec-base-product.typeGallery .thumbnail .cart img { width:16px; }
+
+
+
+
+.ec-base-product .more_view { margin:7px 4px 0; }
+.ec-base-product .more_view a { display:block; padding:0 0 0 0; background:#d4d4d6; }
+.ec-base-product .more_view a span { overflow:hidden; display:block; width:100%; height:30px; text-indent:120%; background:url("http://img.echosting.cafe24.com/skin/mobile_ko_KR/product/bg_togglebar_show.png") no-repeat 50% 50%; background-size:12px 12px; }
+ 
+
+
+
+/* sso_typeSwipe */
+.ec-base-product.typeSwipe { margin:0; }
+.ec-base-product.typeSwipe ul { display:table; table-layout:fixed; padding:0 8px 0 3px; font-size:0; line-height:0; }
+.ec-base-product.typeSwipe li { position:relative; display:inline-block; margin:0 0 8px; padding:0; vertical-align:top; overflow:hidden; font-size:12px; line-height:1.2em; }
+.ec-base-product.typeSwipe .thumbnail { margin:0 4px; }
+
+
+
+
+
+/* typeDesc */
+.ec-base-product.typeDesc { margin:-10px 0 0 0; background:#fff; }
+.ec-base-product.typeDesc .prdList:after { display:block; content:""; clear:both; }
+.ec-base-product.typeDesc .prdList > li { margin:0; padding:14px; width:100%; border-top:1px solid #ececec; }
+.ec-base-product.typeDesc .prdList > li:first-child { padding:0 14px 14px; border-top:0; }
+.ec-base-product.typeDesc .prdList > li:after { display:block; content:""; clear:both; }
+.ec-base-product.typeDesc .thumbnail { float:left; margin:0; padding:0; width:120px; }
+.ec-base-product.typeDesc .thumbnail .wish {  }
+.ec-base-product.typeDesc .description { padding:0 0 0 130px; width:55%; text-align:left; }
+.ec-base-product.typeDesc .description .price { color:#444; font-size:12px; }
+.ec-base-product.typeDesc .description .price.sale { color:#000; font-size:12px; }
+.ec-base-product.typeDesc .description .color { margin:4px 0; }
+.ec-base-product.typeDesc .description .color .chips { display:inline-block; width:19px; height:3px; margin-right:1px; font-size:0; line-height:0; border:1px solid #ccc; }
+
+
+
+
+
+
+
+ 
+/* typeGallery */
+.ec-base-product.typeGallery { margin:0; }
+.ec-base-product.typeGallery ul { display:table; table-layout:fixed; padding:0 4px 0 5px; font-size:0; line-height:0; }
+.ec-base-product.typeGallery li { position:relative; display:inline-block; margin:0 0 8px; padding:0; vertical-align:top; overflow:hidden; font-size:12px; line-height:1.2em; }
+.ec-base-product.typeGallery .thumbnail { margin:0 4px; }
+.ec-base-product.typeGallery .description { position:absolute; left:0; margin:0; padding:0 0 0 2px; text-align:left; width:99%; opacity:0; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+.ec-base-product.typeGallery .description a { overflow:hidden; display:block; padding:4% 10% 4% 5%; width:100%; height:100%; color:#fff; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; background:rgba(0,0,0,0.6); }
+.ec-base-product.typeGallery .description:after { display:block; content:""; position:absolute; top:0; right:12px; width:20px; height:100%;
+    background:url("http://img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_arrow_white.png") 0 center no-repeat; background-size:15px 15px;
+    -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); transform: rotate(270deg); }
+.ec-base-product.typeGallery .description a .name { display:inline-block; margin:0; width:100%; }
+.ec-base-product.typeGallery .description a .name,
+.ec-base-product.typeGallery .description a p { height:15px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.ec-base-product.typeGallery .description a .price { margin:0px 0 0; font-weight:normal; }
+.ec-base-product.typeGallery .description a .price span { display:none; }
+.ec-base-product.typeGallery .sale_price span { color:#fff !important; }
+
+
+
+
+/* 룩북스타일 */
+.ec-base-product.typeLookbook { margin:0; }
+.ec-base-product.typeLookbook ul { display:table; table-layout:fixed; padding:0 4px 0 5px; font-size:0; line-height:0; }
+.ec-base-product.typeLookbook li { position:relative; display:inline-block; margin:0 0 6px; padding:0; vertical-align:top; overflow:hidden; font-size:12px; line-height:1.2em; }
+.ec-base-product.typeLookbook .thumbnail { margin:0 3px; }
+
+
+
+
+/* 할인기간 레이어 */
+.ec-base-product .layerDiscountPeriod { display:none; position:absolute; z-index:100; left:0; width:100%; padding:11px 7px; box-sizing:border-box; }
+.ec-base-product .layerDiscountPeriod .inner { border:1px solid #353535; background:#f1f1f1; border-radius:4px; }
+.ec-base-product .layerDiscountPeriod .inner .title { display:block; padding:7px 14px; font-size:13px; background-color:#353535; color:#fff; font-weight:normal; }
+.ec-base-product .layerDiscountPeriod .inner .timeleft { padding:14px; color:#000; font-size:12px; font-weight:bold; text-align:center; }
+.ec-base-product .layerDiscountPeriod ul { width:95%; margin:0 auto 14px; padding:0; border:1px solid #d5d5d5; background:#fff; }
+.ec-base-product .layerDiscountPeriod ul li { position:relative; padding:14px 0; color:#353535; border-top:1px solid #eee; }
+.ec-base-product .layerDiscountPeriod ul li:first-child { border-top:0; }
+.ec-base-product .layerDiscountPeriod ul li span { margin:0 7% 0 4%; color:#757575; }
+.ec-base-product .layerDiscountPeriod .btnClose { position:absolute; top:8px; right:4px; display:block; width:40px; height:40px; text-indent:-9999px; font-size:0; background:url("http://img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_close_white.png") center center no-repeat; background-size:40% 40%; }
+
+/* 썸네일 아이콘 위치 */
+.ec-product-bgLT { background-position:left top; }
+.ec-product-bgLC { background-position:left center; }
+.ec-product-bgLB { background-position:left bottom; }
+.ec-product-bgRT { background-position:right top; }
+.ec-product-bgRC { background-position:right center; }
+.ec-product-bgRB { background-position:right bottom; }
+.ec-product-bgCT { background-position:center top; }
+.ec-product-bgCC { background-position:center center; }
+.ec-product-bgCB { background-position:center bottom; }
+ 
+/* grid */
+.ec-base-product .grid1 > li { width:100%; }
+.ec-base-product .grid2 > li { width:50%; }
+.ec-base-product .grid3 > li { width:33.333%; }
+.ec-base-product .grid4 > li { width:25%; }
+.ec-base-product .grid5 > li { width:20%; }
+ 
+
+
+
+
+
+
+
+/* 표시항목비노출 */
+.xans-product-listmain-1 .description { display:none; }
+.xans-product-listmain-2 .description { display:none; }
+.xans-product-listmain-3 .description { display:none; }
+.xans-product-listmain-4 .description { display:none; }
+.xans-product-listmain-5 .description { display:none; }
+.xans-product-listmain-6 .description { display:none; }
+.xans-product-listmain .discountPeriod { display:none; }
+
+
+
+/* 소비자가 */
+.ec-base-product .price strike { color:#aaa; }
+.ec-base-product .mPriceStrike { text-decoration:line-through !important; color:#bbb; }
+.ec-base-product .mPriceHide { display:none !important; }
+
+
+.ec-base-product .simple { color:#888; padding:0 !important; margin:0 !important; }
+.ec-base-product .summary { color:#888; padding:0 !important; margin:0 !important; }
+.ec-base-product .price_sale span { color:#222 !important; }
+.ec-base-product .coupon_price { color:#de5656; }
+
+
+
+
+
+

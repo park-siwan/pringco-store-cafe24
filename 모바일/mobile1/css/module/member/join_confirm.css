@@ -1,0 +1,6 @@
+.xans-member-join .joinConfirm { display:none; }
+.xans-member-join .joinConfirm .boardList { margin:10px 0 0; }
+.xans-member-join .joinConfirm .boardList th,
+.xans-member-join .joinConfirm .boardList td { padding:8px 10px 7px; font-size:12px; line-height:1.4; border:1px solid #d7d5d5; word-wrap:break-word; }
+.xans-member-join .joinConfirm .boardList th { font-weight:normal; text-align:left; background-color:#fafafa; }
+.xans-member-join .joinConfirm .boardList .account { margin:0 0 0 10px; }

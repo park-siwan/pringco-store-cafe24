@@ -1,0 +1,9 @@
+/* 상품상세 > 재고수량 레이어 */
+.xans-product-stocklayer .layer .table { margin:10px 0 0; }
+.xans-product-stocklayer .layer .table table { width:100%; table-layout:fixed; border-bottom:1px solid #d7d5d5; border-collapse:collapse; border-spacing:0; }
+.xans-product-stocklayer .layer .table th,
+.xans-product-stocklayer .layer .table td { padding:8px 10px 7px; font-size:12px; line-height:1.4; border:1px solid #d7d5d5; word-wrap:break-word; }
+.xans-product-stocklayer .layer .table th { font-weight:normal; text-align:center; background-color:#fafafa; }
+.xans-product-stocklayer .layer .table .left { text-align:left; }
+.xans-product-stocklayer .layer .table .center { text-align:center; }
+.xans-product-stocklayer .layer .table .right { text-align:right; }

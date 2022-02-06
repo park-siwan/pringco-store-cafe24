@@ -1,0 +1,78 @@
+<li>
+    <div class="thumbnail">
+        <a href="{$link_product_detail}"><img src="{$image_medium}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+ 
+    </div>
+    <div class="description">        
+        <strong class="name {$product_name_display|display}"><a href="{$link_product_detail}"></a></strong>
+        <ul class="spec">
+            <li class="color {$colorchip_display|display}">
+                <div module="product_Colorchip">
+                    <span class="chips" style="background-color:{$color};"></span>
+                    <span class="chips" style="background-color:{$color};"></span>
+                </div>
+            </li>
+
+
+            <li class="simple {$simple_desc|display}">{$simple_desc}</li>
+            <li class="summary {$summary_desc|display}">{$summary_desc}</li>                    
+            <li class="price {$product_promotion_display|display}">
+                <div class="discountPeriod {$product_promotion_display|display}">
+                    <a href="#none" class="btnNormal">할인기간</a>
+                    <div class="layerDiscountPeriod">
+                        <div class="inner">
+                            <strong class="title">할인기간</strong>
+                            <p class="timeleft">{$product_promotion_date}</p>
+                            <ul>
+                                <li><span>할인금액</span>{$product_promotion_dc_price}</li>
+                                <li><span>할인기간</span>{$product_promotion_start_date} ~<br>{$product_promotion_end_date}</li>
+                            </ul>
+                            <a href="#none" class="btnClose">닫기</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</li>
+
+<li>
+    <div class="thumbnail">
+        <a href="{$link_product_detail}"><img src="{$image_medium}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+     
+    </div>
+    <div class="description">        
+        <strong class="name {$product_name_display|display}"><a href="{$link_product_detail}"></a></strong>
+        <ul class="spec">
+            <li class="color {$colorchip_display|display}">
+                <div module="product_Colorchip">
+                    <span class="chips" style="background-color:{$color};"></span>
+                    <span class="chips" style="background-color:{$color};"></span>
+                </div>
+            </li>
+ 
+            
+
+            <li class="simple {$simple_desc|display}">{$simple_desc}</li>
+                     
+            <li class="price {$product_promotion_display|display}">
+                <div class="discountPeriod {$product_promotion_display|display}">
+                    <a href="#none" class="btnNormal">할인기간</a>
+                    <div class="layerDiscountPeriod">
+                        <div class="inner">
+                            <strong class="title">할인기간</strong>
+                            <p class="timeleft">{$product_promotion_date}</p>
+                            <ul>
+                                <li><span>할인금액</span>{$product_promotion_dc_price}</li>
+                                <li><span>할인기간</span>{$product_promotion_start_date} ~<br>{$product_promotion_end_date}</li>
+                            </ul>
+                            <a href="#none" class="btnClose">닫기</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+          
+        </ul>
+    </div>
+</li>

@@ -1,0 +1,40 @@
+#insta_box_line { clear:both; position:relative; border-top:1px solid #eee; height:35px; margin-top:40px; }
+.xans-layout-footerpackage { font-size:11px; line-height:1.5em; font-family:'Lato', sans-serif; margin-top:100px; }
+
+.xans-layout-footerpackage .util_menu { clear:both; text-align:center; }
+.xans-layout-footerpackage .util_menu li { display:inline-block; font-size:11px; }
+.xans-layout-footerpackage .util_menu li a { color:#333; }
+
+.xans-layout-footerpackage .footerMenu { clear:both; width:100%; text-align:center; font-family:'Lato', sans-serif; color:#555; margin:0 auto; }
+.xans-layout-footerpackage .footerMenu a { color:#555; }
+
+.xans-layout-footerpackage .customer { clear:both; width:98%; margin:30px auto 0; }
+.xans-layout-footerpackage .cus_tel { font-weight:normal; font-size:15px; }
+.xans-layout-footerpackage .cus_tel a { color:#222; }
+.xans-layout-footerpackage .kakao_txt { color:#fefefe; background:#333; padding:3px 0px; border-radius:3px; width:55%; margin:10px auto 30px; }
+.xans-layout-footerpackage .cs_txt { display:inline-block; line-height:18px; }
+.xans-layout-footerpackage .cs_txt2 { clear:both; line-height:18px; }
+
+.xans-layout-footerpackage .customer2 { clear:both; margin:20px auto 0; width:98%; }
+.xans-layout-footerpackage .bank_name { clear:both; line-height:18px; }
+
+.xans-layout-footerpackage .customer3 { clear:both; color:#555; margin:20px auto 0; width:98%; line-height:18px; }
+.xans-layout-footerpackage .customer3 a { color:#555; }
+
+.xans-layout-footerpackage .cs_btnarea { clear:both; text-align:center; margin:40px 0; }
+.xans-layout-footerpackage .cs_bt01 { display:inline-block; width:29%; margin:0 2px; padding:7px 0px; border:1px solid #ddd; }
+.xans-layout-footerpackage .cs_bt01 a { color:#666; }
+
+.xans-layout-footerpackage .shop_info { clear:both; width:90%; margin:0 auto; font-size:11px; color:#555; text-align:center; line-height:19px; }
+.xans-layout-footerpackage .shop_info a { color:#555; }
+.xans-layout-footerpackage .shop_txt { display:inline-block; }
+.xans-layout-footerpackage .shop_txt2 { clear:both; }
+.xans-layout-footerpackage .shop_txt3 { clear:both; display:inline-block; }
+.xans-layout-footerpackage .shop_txt_line { display:inline-block; width:8px; height:9px; margin:1px 0 0 8px; border-left:1px solid #888; }
+
+.xans-layout-footerpackage .policy_back { clear:both; background:#f9f9f9; width:100%; padding:30px 0 55px; margin-top:40px; font-family:'Lato', sans-serif; }
+.xans-layout-footerpackage .sns_icon { clear:both; text-align:center; }  
+.xans-layout-footerpackage .sns_icon img { width:28px; margin:20px 2px; }
+.xans-layout-footerpackage .copy_con { clear:both; text-align:center; }
+.xans-layout-footerpackage .copyright { color:#777; font-size:10px; }
+.xans-layout-footerpackage .copyright a { color:#888; }

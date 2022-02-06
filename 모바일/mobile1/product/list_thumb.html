@@ -1,0 +1,124 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="Product_menupackage">
+    <!--@css(/css/module/product/menuPackage.css)-->
+    
+    <p class="banner" module="product_headcategory">{$top_image1_tag_mobile}{$top_image2_tag_mobile}{$top_image3_tag_mobile}</p>
+    
+    <div id="titleArea" module="product_headcategory">
+        <h2>{$title_text_or_image}</h2>
+        <span module="Layout_MobileAction">
+            <a href="#none" onclick="{$go_back}"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_back.gif" width="33" alt="뒤로가기"></a>
+        </span>
+        <div class="funcArea">
+            <div class="likeButton {$disp_likecate_class}"><button type="button">LIKE IT&nbsp;{$disp_likecate_icon}<strong>{$disp_likecate_count}</strong></button></div>
+        </div>
+    </div>
+
+    <ul class="menuCategory">
+        <!-- 참고 : 뉴상품관리 전용 모듈입니다. 뉴상품관리 이외의 곳에서 사용하면 정상동작하지 않습니다. -->
+        <li module="product_displaysubcategory" style="display:{$display};" class="{$selected}">
+            <a href="/product/list_thumb.html?{$param_cate_no}">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
+            <ul module="product_children">
+                <li class="{$selected}">
+                    <a href="/product/list_thumb.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <div module="product_children" class="subCategory">
+                            <ul>
+                                <li class="{$selected}"><a href="/product/list_thumb.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                                <li class="{$selected}"><a href="/product/list_thumb.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            </ul>
+                            <img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/product/btn_category_close.png" alt="" class="icoClose" />
+                        </div>
+                    </div>
+                </li>
+                <li class="{$selected}">
+                    <a href="/product/list_thumb.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <div module="product_children" class="subCategory">
+                            <ul>
+                                <li class="{$selected}"><a href="/product/list_thumb.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                                <li class="{$selected}"><a href="/product/list_thumb.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            </ul>
+                            <img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/product/btn_category_close.png" alt="" class="icoClose" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li><!-- //참고 -->
+    </ul>
+
+    
+</div>
+
+<!-- 추천상품 -->
+<div module="product_listrecommend" class="ec-base-product">
+    <!--@css(/css/module/product/listrecommend_swipe.css)-->
+    <!--
+        $count = 8
+        $line = 1
+        $grid = 2
+        $swipe = yes
+    -->
+
+    <ul class="prdList grid2">
+        <!--@import(/itsme/html/product_recommend.html)-->
+    </ul>
+</div>
+<!-- // 추천상품 -->
+
+
+
+
+
+<!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
+<div module="product_normalmenu">
+    <!--@css(/css/module/product/normalmenu.css)-->
+    <!--@js(/js/module/product/normalmenu.js)-->
+    <div class="sort">
+        <select id="selArray" name="selArray" module="product_Orderby">
+            <option value="{$param}">{$sort_name}</option>
+            <option value="{$param}">{$sort_name}</option>
+        </select>
+    </div>
+</div><!-- //참고 -->
+
+
+<!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
+<div id="sub_catetab" class="ec-base-product typeThumb" module="product_listnormal">
+    <!--@js(/js/module/product/listnormal.js)-->  <!-- 분류페이지 상품목록 탭메뉴 포함 -->
+    
+    <!--
+        $count = 12
+        $moreview = yes
+        $cache = yes
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+    -->    
+    
+   
+    <!--@css(/itsme/css/main_cate_tab.css)-->
+    
+    <div id="sub_catetab_button">
+        <img class="grid1" src="/web/upload/m_itsme/view_bt01.png">
+        <img class="grid2" src="/web/upload/m_itsme/view_bt02_on.png">
+        <img class="grid3" src="/web/upload/m_itsme/view_bt03.png">
+    </div>
+    
+    
+    <ul class="prdList grid2">
+        <!--@import(/itsme/html/product_list.html)-->
+    </ul>
+</div>
+<!-- // 참고 -->
+
+
+
+
+
+<div module="product_listmore" class="paginate typeMoreview">
+    <a href="#none" onclick="{$more_action}">
+        MORE VIEW <span id="more_current_page">{$current_page}</span>/<span id="more_total_page">{$total_page}</span><span class="icoMore"></span>
+    </a>
+</div>

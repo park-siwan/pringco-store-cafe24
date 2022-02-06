@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+
+    
+    <title></title>
+    <!--@css(/layout/basic/css/common.css)-->
+    <!--@css(/layout/basic/css/layout.css)-->
+    <!--@css(/layout/basic/css/ec-base-ui.css)-->
+    <!--@css(/layout/basic/css/paginate.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-product.css)-->
+    <!--@css(/layout/basic/css/ec-base-button.css)-->
+    <!--@css(/layout/basic/css/ec-base-box.css)-->
+    <!--@css(/layout/basic/css/ec-base-layer.css)-->
+    <!--@css(/layout/basic/css/ec-base-table.css)-->
+    
+            <!--카카오sdk-->
+    		<meta charset="utf-8"/>
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+			<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+			<title>PlusFriend Add Friend Button Demo - Kakao JavaScript SDK</title>
+			<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+			<!--카카오sdk-->
+    
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+    
+
+    <!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
+    <!--@js(/layout/basic/js/common.js)-->
+    
+    
+    <!--@js(/itsme/js/gotop.js)-->
+    <!--@js(/itsme/js/fixed_menu.js)-->
+    <!--@js(/itsme/js/category.js)-->
+    
+</head>
+    
+    
+    
+    
+<body id="main">
+    <div module="Popup_MultiPopup">
+        <!--
+            $banner_popup_no =
+            ※ 노출시킬 팝업의 ID를 숫자로 넣어주세요.
+        -->
+        {$popup}
+    </div>
+    <div module="Popup_MultiBanner">
+        <!--
+            $banner_popup_no =
+            ※ 노출시킬 배너의 ID를 숫자로 넣어주세요.
+        -->
+        {$banner}
+    </div>
+    
+    
+    
+    
+    <div id="wrap">
+        <!--@import(/layout/basic/sidebar.html)-->
+        
+        <hr class="layout">
+        <div id="container">
+            <header id="header">
+                <div class="header">
+                    
+                    <div class="nav-container">         
+                       <div class="nav">   
+                            <section id="topArea">
+                                <div class="searchWrap">
+                                    <p class="category"><a href="#none" class="fold"><img src="/web/upload/m_itsme/btn_category.png"></a></p>
+                                    
+                                    <h1 module="Layout_LogoTop">
+                                        <a href="/"><img src="/web/upload/m_itsme/m_logo.png"></a>
+                                    </h1>       
+                                    
+                                    <p class="cart_bt"><a href="/order/basket.html"><img src="/web/upload/m_itsme/btn_cart.png"><span module="Layout_orderBasketcount" class="count {$basket_count_display} {$basket_count_display_class}"><span class=" cart_one {$basket_count_class}">{$basket_count}</span></span></a></p>
+                                    
+                                    
+                                    <p class="search"><button type="button"><img src="/web/upload/m_itsme/btn_search.png"></button></p>
+                                    
+                                </div>                                                
+                            </section>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="logo_area" module="Layout_LogoTop">
+                        <a href="/"><img src="/web/upload/m_itsme/m_logo.png"></a>
+                    </div>  
+                    
+                    
+                    <!--@import(/layout/basic/search.html)-->
+                                
+                    <!--카테고리 비활성화했음 2019-03-12-->
+                    <!--div id="category_main"><!--@import(/itsme/html/toggle_menu.html)--></div--> 
+                    
+                
+                    <!-- 메인 슬라이드배너 -->
+                    <div class="mainBanner" module="Mobile_Banner">
+                        <!--
+                            $swipe = yes
+                            $custom = no
+                        -->
+                        <ul>
+                            <li><a href="{$banner_link_url}"><img src="{$banner_image_url}" width="100%" alt=""></a></li>
+                            <li class="afterNone"><a href="{$banner_link_url}"><img src="{$banner_image_url}" width="100%" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <!-- // 메인 슬라이드배너 -->                     
+                    
+                    <div id="m_slibann_blank"></div>
+                    
+                </div>
+            </header>           
+            
+            
+            <hr class="layout">
+            <div id="contents">
+                <!--@contents-->
+            </div>
+            <hr class="layout">
+            
+            
+            <!--@import(/layout/basic/footer.html)-->
+            
+            
+        </div>
+    </div>
+    
+    
+    
+    
+</body>
+    
+</html>

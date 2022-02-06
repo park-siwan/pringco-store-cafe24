@@ -1,0 +1,49 @@
+<!--@css(/itsme/css/category.css)-->
+
+
+<div class="category_main">
+    <ul>  
+        <li class="shop"><a href="#" class="title">CATEGORY</a></li>
+        <li class="community"><a href="#" class="title">COMMUNITY</a></li>
+        <li class="myshop"><a href="#" class="title">MYSHOP</a></li> 
+    </ul>
+
+    
+    
+    <div class="category_sub sub_shop">
+        <ul module="layout_category" class="grid3">
+            <li id="cate{$cate_no}"><a href="/product/list_thumb.html{$param}" cate="{$param}">{$name|cut 25}</a></li>
+            <li id="cate{$cate_no}"><a href="/product/list_thumb.html{$param}" cate="{$param}">{$name|cut 25}</a></li>
+        </ul>
+    </div>
+    
+    <div class="category_sub sub_community">           
+        <ul module="Layout_BoardInfo">
+            <li><a href="{$board_list_url}">{$board_name}</a></li>
+            <li><a href="{$board_list_url}">{$board_name}</a></li> 
+        </ul>
+    </div> 
+    
+    <div class="category_sub sub_myshop">
+        <ul>         
+         
+                <li module="Layout_statelogon"><a href="{$action_logout}">LOGOUT</a></li>
+                <li module="Layout_statelogon"><a href="/member/modify.html">MODIFY</a></li>
+         
+      
+                <li module="Layout_stateLogoff"><a href="/member/login.html" class="btnLogin">LOGIN</a></li>
+                <li module="Layout_stateLogoff"><a href="/member/agreement.html">JOIN US</a></li>
+          
+            
+            <li><a href="/myshop/index.html">MY PAGE</a></li>
+            <li><a href="/order/basket.html">CART</a></li>
+            <li><a href="/myshop/order/list.html">ORDER</a></li> 
+            <li><a href="/myshop/wish_list.html">WISH LIST</a></li>
+            <li><a href="/myshop/recent_list.html">TODAY VIEW</a></li>
+            <li><a href="/myshop/board_list.html">MY BOARD</a></li>
+        </ul>
+    </div> 
+    
+</div>
+
+

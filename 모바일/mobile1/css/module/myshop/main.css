@@ -1,0 +1,16 @@
+.xans-myshop-main { border:1px solid #d5d5d5; background:#fff; }
+.xans-myshop-main li { border-top:1px solid #e1e1e1; }
+.xans-myshop-main li:first-child { border-top:0; }
+.xans-myshop-main li a { display:block; position:relative; padding:15px; }
+.xans-myshop-main li a:after { display:block; position:absolute; top:12px; right:12px; content:""; }
+.xans-myshop-main li .count { color:#000; }
+
+.xans-myshop-main li.order { }
+.xans-myshop-main li.modify { }
+.xans-myshop-main li.wishlist {  }
+.xans-myshop-main li.mileage {  }
+.xans-myshop-main li.deposits { }
+.xans-myshop-main li.consult { }
+.xans-myshop-main li.coupon {  }
+.xans-myshop-main li.board {  }
+.xans-myshop-main li.address { }
